@@ -57,7 +57,7 @@ label {
 
 .menu a:hover:not(:first-child) {
   color: #d6cec2;
-  text-shadow:#9e9586;
+  text-shadow: #9e9586;
 }
 
 /* #toggle:checked + .menu {
@@ -109,63 +109,46 @@ label {
 }
 
 .link a:hover {
-  /* color: #d6cec2;
-  font-size: 26px; */
-  color: #d6cec2; 
+  color: #d6cec2;
   text-shadow: 1px 1px #9e9586;
 }
 
-/* .card:first-child {
-  background-color: purple;
-  width : 600px;
-
+.cards .parallax {
+  display: none;
 }
-.card:nth-child(2) {
-  background-color: yellow;
-  width : 350px;
-
-}
-
-.card:nth-child(4) {
-  background-color:red;
-  width : 250px;
-
-} */
-
-.cards {
-  margin: 0 auto;
-  display: grid;
-}
-
-
-/* to be moved to media if works  */
-.parallax {
-  /* The image used */
-  border: 1px solid black;
-  background-image: url("./tryout.jpeg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
-
-
 
 /* desktop and bigger screen */
 @media (min-width: 600px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
   }
+  .cards {
+    margin: 0 auto;
+    display: grid;
+  }
+
+  /* to be moved to media if works  */
+  .parallax {
+    /* The image used */
+    border: 1px solid black;
+    background-image: url("./tryout.jpeg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
 }
 
 @media (min-width: 1045px) {
+  .cards .parallax {
+    display: block;
+  }
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -228,7 +211,7 @@ label {
   }
 }
 
-@media (min-width:1329px) {
+@media (min-width: 1329px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
