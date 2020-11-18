@@ -117,10 +117,6 @@ label {
  
 }
 
-#transparent {
-  background-color: transparent;
-}
-
 /* .card:first-child {
   background-color: purple;
   width : 600px;
@@ -143,6 +139,28 @@ label {
   display: grid;
   /* grid-gap: 0.3rem; */
 }
+
+
+/* to be moved to media if works  */
+.parallax {
+  /* The image used */
+  border: 1px solid black;
+  background-image: url("./tryout.jpeg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+
+
+
 /* desktop and bigger screen */
 @media (min-width: 600px) {
   .cards {
