@@ -91,7 +91,6 @@ label {
 
 .link {
   background-color: white;
-  /* padding: 1rem; */
   height: 6rem;
   border: 2px solid black;
   text-align: center;
@@ -114,7 +113,6 @@ label {
   font-size: 26px; */
   color: #d6cec2; 
   text-shadow: 1px 1px #9e9586;
- 
 }
 
 /* .card:first-child {
@@ -137,7 +135,6 @@ label {
 .cards {
   margin: 0 auto;
   display: grid;
-  /* grid-gap: 0.3rem; */
 }
 
 
@@ -170,7 +167,7 @@ label {
 
 @media (min-width: 1045px) {
   .cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   #toggle:checked + .menu a:first-child {
     display: block;
@@ -228,5 +225,11 @@ label {
 
   label {
     display: none;
+  }
+}
+
+@media (min-width:1329px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
