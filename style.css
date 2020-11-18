@@ -57,6 +57,7 @@ label {
 
 .menu a:hover:not(:first-child) {
   color: #d6cec2;
+  text-shadow:#9e9586;
 }
 
 /* #toggle:checked + .menu {
@@ -91,21 +92,33 @@ label {
 .link {
   background-color: white;
   /* padding: 1rem; */
-  height: 80px;
+  height: 6rem;
   border: 2px solid black;
   text-align: center;
-  line-height: 80px;
+  line-height: 6rem;
 }
 
 .link a {
   text-decoration: none;
   cursor: pointer;
   color: black;
-  /* line-height: 14rem; */
+  font-size: 24px;
 }
 
 .link p {
   margin: 0;
+}
+
+.link a:hover {
+  /* color: #d6cec2;
+  font-size: 26px; */
+  color: #d6cec2; 
+  text-shadow: 1px 1px #9e9586;
+ 
+}
+
+#transparent {
+  background-color: transparent;
 }
 
 /* .card:first-child {
@@ -133,16 +146,14 @@ label {
 /* desktop and bigger screen */
 @media (min-width: 600px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1045px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-@media (min-width: 1045px) {
   #toggle:checked + .menu a:first-child {
     display: block;
   }
