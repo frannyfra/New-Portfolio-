@@ -16,8 +16,8 @@ html {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(20rem);
+  /* grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(20rem); */
   margin: 0 auto;
 }
 
@@ -96,6 +96,8 @@ label {
 }
 
 .link {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: white;
   height: 6rem;
   border: 2px solid black;
@@ -120,19 +122,18 @@ label {
 }
 
 @media (min-width: 1045px) {
-  
   .cards .parallax {
     display: block;
   }
-  
+
   .parallax {
     /* The image used */
     border: 1px solid black;
     background-image: url("./tryout.jpeg");
-  
+
     /* Full height */
     height: 100%;
-  
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -142,6 +143,7 @@ label {
   }
 
   .cards {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -149,10 +151,10 @@ label {
     height: 30rem;
   }
 
-  .cards .link {
+  /* .cards .link {
     grid-template-rows: repeat(1, 1fr);
     background-color: red;
-  }
+  } */
 
   #toggle:checked + .menu a:first-child {
     display: block;
@@ -215,12 +217,87 @@ label {
 
 @media (min-width: 1329px) {
   .cards {
-    grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(40rem);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 0.2fr;
+    grid-template-areas:
+      "cardOne cardOne cardOne cardOne cardOne cardOne cardTwo cardTwo cardTwo cardThree cardThree cardThree"
+      "cardFour cardFour cardFour cardFour cardFive cardFive cardFive cardSix cardSix cardSix cardSix cardSix"
+      "cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight cardEight cardNine cardNine cardNine"
+      "cardTen cardTen cardTen cardTen cardEl cardEl cardEl cardEl cardTwelve cardTwelve cardTwelve cardTwelve"
+      "linkOne linkOne linkOne linkOne linkTwo linkTwo linkTwo linkTwo linkThree linkThree linkThree linkThree"
   }
-.card{
-  height: 40rem;
-}
+
+  .card {
+    height: 40rem;
+  }
+
+  div .card.cardOne {
+    background-color: red;
+    grid-area: cardOne;
+  }
+
+  div .card.cardTwo {
+    background-color: white;
+    grid-area: cardTwo;
+  }
+
+  div .card.cardThree {
+    background-color: white;
+    grid-area: cardThree;
+  }
+
+  div .card.cardFour {
+    background-color: purple;
+    grid-area: cardFour;
+  }
+
+  div .card.cardFive {
+
+    grid-area: cardFive;
+  }
+
+  div .card.cardSix {
+    grid-area: cardSix;
+  }
+
+  div .card.cardSeven {
+    grid-area: cardSeven;
+  }
+
+  div .parallax.cardEight {
+    /* background-color: purple; */
+    grid-area: cardEight;
+  }
+
+  div .card.cardNine {
+    grid-area: cardNine;
+  }
+
+  div .card.cardTen {
+    grid-area: cardTen;
+  }
+
+  div .card.cardEleven {
+    grid-area: cardEl;
+  }
+
+  div .card.cardTwelve {
+    grid-area: cardTwelve;
+  }
+
+  div .link.link-one {
+    grid-area: linkOne;
+  }
+
+  div .link.link-two {
+    grid-area: linkTwo; 
+  }
+
+  div .link.link-three {
+    grid-area: linkThree;
+  }
+  
   /* .card:first-child {
     background-color: green;
     grid-column: 1/4;
