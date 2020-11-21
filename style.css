@@ -96,13 +96,15 @@ label {
 }
 
 .link {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: white;
+  background-color: #d6cec2;
   height: 6rem;
   border: 2px solid black;
   text-align: center;
   line-height: 6rem;
+}
+
+div .link.link-two{
+  background-color:white;
 }
 
 .link a {
