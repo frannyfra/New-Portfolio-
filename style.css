@@ -14,6 +14,13 @@ html {
   font-family: "Syne", sans-serif;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(20rem);
+  margin: 0 auto;
+}
+
 .logo {
   position: absolute;
   font-size: 26px;
@@ -48,7 +55,6 @@ label {
   display: block;
   /* text-align!!! */
   text-align: center;
-  clear: right;
   text-decoration: none;
   color: black;
   line-height: 80px;
@@ -82,10 +88,10 @@ label {
 }
 
 .card {
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
   color: white;
   padding: 1rem;
-  height: 40rem;
+  height: 20rem;
   border: 2px solid black;
 }
 
@@ -113,29 +119,20 @@ label {
   text-shadow: 1px 1px #9e9586;
 }
 
-.cards .parallax {
-  display: none;
-}
-
-/* desktop and bigger screen */
-@media (min-width: 600px) {
-  .cards {
-    grid-template-columns: repeat(1, 1fr);
+@media (min-width: 1045px) {
+  
+  .cards .parallax {
+    display: block;
   }
-  .cards {
-    margin: 0 auto;
-    display: grid;
-  }
-
-  /* to be moved to media if works  */
+  
   .parallax {
     /* The image used */
     border: 1px solid black;
     background-image: url("./tryout.jpeg");
-
+  
     /* Full height */
     height: 100%;
-
+  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -143,15 +140,20 @@ label {
     background-size: cover;
     z-index: -1;
   }
-}
 
-@media (min-width: 1045px) {
-  .cards .parallax {
-    display: block;
-  }
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .card {
+    height: 30rem;
+  }
+
+  .cards .link {
+    grid-template-rows: repeat(1, 1fr);
+    background-color: red;
+  }
+
   #toggle:checked + .menu a:first-child {
     display: block;
   }
@@ -194,7 +196,7 @@ label {
   .menu a {
     display: inline-block;
     text-align: center;
-    clear: right;
+    /* clear: right; */
     text-decoration: none;
     color: black;
     line-height: 80px;
@@ -214,5 +216,14 @@ label {
 @media (min-width: 1329px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(40rem);
   }
+.card{
+  height: 40rem;
+}
+  /* .card:first-child {
+    background-color: green;
+    grid-column: 1/4;
+    grid-row: 1;
+  } */
 }
