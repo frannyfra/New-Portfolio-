@@ -88,7 +88,6 @@ label {
 }
 
 .card {
-  /* background-color: dodgerblue; */
   color: white;
   padding: 1rem;
   height: 20rem;
@@ -103,8 +102,8 @@ label {
   line-height: 6rem;
 }
 
-div .link.link-two{
-  background-color:white;
+div .link.link-two {
+  background-color: white;
 }
 
 .link a {
@@ -146,7 +145,79 @@ div .link.link-two{
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "cardOne cardOne cardOne cardTwo cardTwo cardTwo"
+      "cardThree cardThree cardThree cardFour cardFour cardFour"
+      "cardFive cardFive cardFive cardSix cardSix cardSix"
+      "cardSeven cardSeven cardSeven cardEight cardEight cardEight"
+      "cardNine cardNine cardNine cardTen cardTen cardTen"
+      "cardEl cardEl cardEl cardTwelve cardTwelve cardTwelve"
+      "linkOne linkOne linkTwo linkTwo linkThree linkThree";
+  }
+
+  div .card.cardOne {
+    background-color: red;
+    grid-area: cardOne;
+  }
+
+  div .card.cardTwo {
+    background-color: white;
+    grid-area: cardTwo;
+  }
+
+  div .card.cardThree {
+    background-color: white;
+    grid-area: cardThree;
+  }
+
+  div .card.cardFour {
+    background-color: purple;
+    grid-area: cardFour;
+  }
+
+  div .card.cardFive {
+    grid-area: cardFive;
+  }
+
+  div .card.cardSix {
+    grid-area: cardSix;
+  }
+
+  div .card.cardSeven {
+    grid-area: cardSeven;
+  }
+
+  div .parallax.cardEight {
+    grid-area: cardEight;
+  }
+
+  div .card.cardNine {
+    grid-area: cardNine;
+  }
+
+  div .card.cardTen {
+    grid-area: cardTen;
+  }
+
+  div .card.cardEleven {
+    grid-area: cardEl;
+  }
+
+  div .card.cardTwelve {
+    grid-area: cardTwelve;
+  }
+
+  div .link.link-one {
+    grid-area: linkOne;
+  }
+
+  div .link.link-two {
+    grid-area: linkTwo;
+  }
+
+  div .link.link-three {
+    grid-area: linkThree;
   }
 
   .card {
@@ -221,13 +292,13 @@ div .link.link-two{
   .cards {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 0.2fr;
+    grid-template-rows: 2.5fr 2.5fr 2.5fr 2.5fr 0.2fr;
     grid-template-areas:
       "cardOne cardOne cardOne cardOne cardOne cardOne cardTwo cardTwo cardTwo cardThree cardThree cardThree"
       "cardFour cardFour cardFour cardFour cardFive cardFive cardFive cardSix cardSix cardSix cardSix cardSix"
       "cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight cardEight cardNine cardNine cardNine"
       "cardTen cardTen cardTen cardTen cardEl cardEl cardEl cardEl cardTwelve cardTwelve cardTwelve cardTwelve"
-      "linkOne linkOne linkOne linkOne linkTwo linkTwo linkTwo linkTwo linkThree linkThree linkThree linkThree"
+      "linkOne linkOne linkOne linkOne linkTwo linkTwo linkTwo linkTwo linkThree linkThree linkThree linkThree";
   }
 
   .card {
@@ -255,7 +326,6 @@ div .link.link-two{
   }
 
   div .card.cardFive {
-
     grid-area: cardFive;
   }
 
@@ -268,7 +338,6 @@ div .link.link-two{
   }
 
   div .parallax.cardEight {
-    /* background-color: purple; */
     grid-area: cardEight;
   }
 
@@ -293,13 +362,13 @@ div .link.link-two{
   }
 
   div .link.link-two {
-    grid-area: linkTwo; 
+    grid-area: linkTwo;
   }
 
   div .link.link-three {
     grid-area: linkThree;
   }
-  
+
   /* .card:first-child {
     background-color: green;
     grid-column: 1/4;
