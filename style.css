@@ -294,8 +294,8 @@ div .link.link-two {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 2.5fr 2.5fr 2.5fr 2.5fr 0.2fr;
     grid-template-areas:
-      "cardOne cardOne cardOne cardOne cardOne cardOne cardTwo cardTwo cardTwo cardThree cardThree cardThree"
-      "cardFour cardFour cardFour cardFour cardFive cardFive cardFive cardSix cardSix cardSix cardSix cardSix"
+      "cardOne cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree cardThree"
+      "cardFour cardFour cardFour cardFive cardFive cardFive cardFive cardSix cardSix cardSix cardSix cardSix"
       "cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight cardEight cardNine cardNine cardNine"
       "cardTen cardTen cardTen cardTen cardEl cardEl cardEl cardEl cardTwelve cardTwelve cardTwelve cardTwelve"
       "linkOne linkOne linkOne linkOne linkTwo linkTwo linkTwo linkTwo linkThree linkThree linkThree linkThree";
@@ -303,70 +303,6 @@ div .link.link-two {
 
   .card {
     height: 40rem;
-  }
-
-  div .card.cardOne {
-    background-color: red;
-    grid-area: cardOne;
-  }
-
-  div .card.cardTwo {
-    background-color: white;
-    grid-area: cardTwo;
-  }
-
-  div .card.cardThree {
-    background-color: white;
-    grid-area: cardThree;
-  }
-
-  div .card.cardFour {
-    background-color: purple;
-    grid-area: cardFour;
-  }
-
-  div .card.cardFive {
-    grid-area: cardFive;
-  }
-
-  div .card.cardSix {
-    grid-area: cardSix;
-  }
-
-  div .card.cardSeven {
-    grid-area: cardSeven;
-  }
-
-  div .parallax.cardEight {
-    grid-area: cardEight;
-  }
-
-  div .card.cardNine {
-    grid-area: cardNine;
-  }
-
-  div .card.cardTen {
-    grid-area: cardTen;
-  }
-
-  div .card.cardEleven {
-    grid-area: cardEl;
-  }
-
-  div .card.cardTwelve {
-    grid-area: cardTwelve;
-  }
-
-  div .link.link-one {
-    grid-area: linkOne;
-  }
-
-  div .link.link-two {
-    grid-area: linkTwo;
-  }
-
-  div .link.link-three {
-    grid-area: linkThree;
   }
 
   /* .card:first-child {
