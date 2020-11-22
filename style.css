@@ -305,6 +305,10 @@ div .link.link-two {
     height: 40rem;
   }
 
+  .link{
+    background-color: white;
+  }
+
   /* .card:first-child {
     background-color: green;
     grid-column: 1/4;
