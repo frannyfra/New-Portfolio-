@@ -128,8 +128,8 @@ div .card.cardTwo {
   align-items: center;
 }
 
-div .card.cardTwo div.text{
-  color:black;
+div .card.cardTwo div.text {
+  color: black;
 }
 
 div .card.cardSix {
@@ -141,29 +141,48 @@ div .card.cardSix {
   font-weight: bold;
 }
 
+.card.cardNine {
+  color: white;
+  background: black;
+}
 div .card.cardEleven {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-div .card.cardEleven div.content {
+.card.cardTwelve {
+  color: black;
+}
+.card.cardEleven div.content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 2px solid red;
   color: black;
 }
 
+.card.cardEleven div.content p {
+  margin: 2px;
+  /* color: blue; */
+}
+
+.card.cardEleven div.content h3 {
+  padding-bottom: 3rem;
+}
+
 .contact {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   border: 4px solid purple;
+  color: black;
 }
 
 @media (min-width: 550px) {
   .card {
     height: 25rem;
   }
-
 }
 
 @media (min-width: 1045px) {
@@ -174,7 +193,7 @@ div .card.cardEleven div.content {
   .parallax {
     /* The image used */
     border: 1px solid black;
-    background-image: url("./images/frame.jpeg");
+    background-image: url("./images/framePic.jpeg");
 
     /* Full height */
     height: 100%;
@@ -230,9 +249,7 @@ div .card.cardEleven div.content {
   div .card.cardSix {
     background-image: url("./images/gin.jpeg");
     grid-area: cardSix;
-
   }
-
 
   div .card.cardSeven {
     background-color: #ff7f50;
@@ -327,6 +344,10 @@ div .card.cardEleven div.content {
   .link {
     background-color: white;
   }
+
+  .cardNine {
+    text-decoration: none;
+  }
 }
 
 @media (min-width: 1329px) {
@@ -337,7 +358,7 @@ div .card.cardEleven div.content {
     grid-template-areas:
       "cardOne cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree cardThree"
       "cardFour cardFour cardFour cardFive cardFive cardFive cardFive cardSix cardSix cardSix cardSix cardSix"
-      "cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight cardEight cardNine cardNine cardNine"
+      "cardSeven cardSeven cardEight cardEight cardEight cardEight cardEight cardEight cardEight  cardNine cardNine cardNine"
       "cardTen cardTen cardTen cardTen cardEl cardEl cardEl cardEl cardTwelve cardTwelve cardTwelve cardTwelve"
       "linkOne linkOne linkOne linkOne linkTwo linkTwo linkTwo linkTwo linkThree linkThree linkThree linkThree";
   }
