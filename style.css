@@ -118,8 +118,8 @@ div .link.link-two {
 }
 
 div .card.cardOne {
-  background-image: url("./images/myPic.jpeg");
-  /* background-size: cover; */
+  background-image: url("./images/seaSide.jpg");
+  background-size: cover;
 }
 
 div .card.cardTwo {
@@ -171,6 +171,10 @@ div .card.cardEleven {
 
 .card.cardEleven div.content h3 {
   padding-bottom: 3rem;
+}
+
+.card.cardTwelve {
+  background-image: url("./images/cvPic.jpeg");
 }
 
 .contact {
