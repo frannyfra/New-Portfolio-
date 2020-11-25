@@ -124,22 +124,29 @@ div .link.link-two {
 @media (min-width: 1045px) {
   .cards .parallax {
     display: block;
+    position: relative;
   }
 
   .parallax {
     /* The image used */
     border: 1px solid black;
     background-image: url("./images/framePic.jpeg");
-
     /* Full height */
     height: 100%;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+  }
+
+  .parallax p {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-decoration: none;
+    font-weight: bold;
   }
 
   .card {
@@ -232,15 +239,22 @@ div .link.link-two {
     grid-area: linkThree;
   }
 
-  /* div .card.cardOne { */
-  /* background-image: url("./images/seaSide.jpg"); */
-  /* background-size: cover; */
-  /* } */
+  /* ---- */
+  .card.cardOne {
+    position: relative;
+  }
 
-  div .card.cardOne img {
-    border: 2px solid red;
+  .card.cardOne p {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-decoration: none;
+  }
+
+  .card.cardOne img {
     width: 100%;
-    height: auto;
+    max-height: 100%;
+    /* display: block; */
   }
 
   div .card.cardTwo {
@@ -251,6 +265,25 @@ div .link.link-two {
 
   div .card.cardTwo div.text {
     color: black;
+  }
+
+  .card.cardFour {
+    position: relative;
+  }
+
+  .card.cardFour p {
+    color: black;
+    /* position: absolute;
+    top: 8px;
+    left: 16px;
+    text-decoration: none; */
+  }
+
+  .card.cardFive a {
+    top: 8px;
+    left: 16px;
+    text-decoration: none;
+    /* padding: 16px 0; */
   }
 
   div .card.cardSix {
@@ -271,6 +304,17 @@ div .link.link-two {
     top: 8px;
     left: 16px;
     text-decoration: none;
+  }
+
+  .cardSeven {
+    display: flex;
+    align-items: center;
+  }
+  .card.cardSeven div.motto {
+    width: 15rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
   }
 
   .card.cardNine {
@@ -305,13 +349,11 @@ div .link.link-two {
 
   .card.cardTwelve {
     position: relative;
-    /* text-align:center; */
   }
 
   .card.card.cardTwelve img {
     /* max-width: 100%; */
     max-height: 100%;
-    /* display: block; */
   }
 
   .card.card.cardTwelve a {
