@@ -84,7 +84,7 @@ label {
 
 .card {
   color: white;
-  padding: 1rem;
+  /* padding: 1rem; */
   height: 15rem;
   border: 2px solid black;
 }
@@ -117,9 +117,14 @@ div .link.link-two {
   text-shadow: 1px 1px #9e9586;
 }
 
-div .card.cardOne {
-  background-image: url("./images/seaSide.jpg");
-  background-size: cover;
+/* div .card.cardOne { */
+  /* background-image: url("./images/seaSide.jpg"); */
+  /* background-size: cover; */
+/* } */
+div .card.cardOne img {
+  border: 2px solid red;
+  width : 100%;
+  height: auto;
 }
 
 div .card.cardTwo {
@@ -145,6 +150,7 @@ div .card.cardSix {
   color: white;
   background: black;
 }
+
 div .card.cardEleven {
   display: flex;
   flex-direction: column;
@@ -152,9 +158,6 @@ div .card.cardEleven {
   align-items: center;
 }
 
-.card.cardTwelve {
-  color: black;
-}
 .card.cardEleven div.content {
   display: flex;
   flex-direction: column;
@@ -174,8 +177,25 @@ div .card.cardEleven {
 }
 
 .card.cardTwelve {
-  background-image: url("./images/cvPic.jpeg");
+  position: relative;
+  /* text-align:center; */
+ 
 }
+
+.card.card.cardTwelve img {
+  /* max-width: 100%; */
+  max-height: 100%;
+  /* display: block; */
+}
+
+.card.card.cardTwelve a {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: black;
+  text-decoration: none;
+}
+
 
 .contact {
   /* align-self: flex-end; */
@@ -253,6 +273,8 @@ div .card.cardEleven {
   div .card.cardSix {
     background-image: url("./images/gin.jpeg");
     grid-area: cardSix;
+    /* width: 100%;
+    height :auto; */
   }
 
   div .card.cardSeven {
