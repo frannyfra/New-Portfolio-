@@ -16,8 +16,6 @@ html {
 
 .cards {
   display: grid;
-  /* grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(20rem); */
   margin: 0 auto;
 }
 
@@ -118,12 +116,13 @@ div .link.link-two {
 }
 
 /* div .card.cardOne { */
-  /* background-image: url("./images/seaSide.jpg"); */
-  /* background-size: cover; */
+/* background-image: url("./images/seaSide.jpg"); */
+/* background-size: cover; */
 /* } */
+
 div .card.cardOne img {
   border: 2px solid red;
-  width : 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -138,13 +137,41 @@ div .card.cardTwo div.text {
 }
 
 div .card.cardSix {
-  display: flex;
-  justify-content: center;
-  background-image: url("./images/gin.jpeg");
-  background-size: cover;
-  color: white;
-  font-weight: bold;
+  /* background-image: url("./images/gin.jpeg"); */
+  grid-area: cardSix;
+  height: 480px;
+  position: relative;
 }
+
+.card.cardSix img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+
+  /* .card.cardTwelve {
+  position: relative; */
+  /* text-align:center; */
+
+  /* } */
+
+  /* .card.card.cardTwelve img {
+  /* max-width: 100%; */
+  /* max-height: 100%; */
+  /* display: block; */
+  /* } */
+
+  /* .card.card.cardTwelve a {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: black;
+  text-decoration: none;
+} */
+
+
+
 
 .card.cardNine {
   color: white;
@@ -179,7 +206,6 @@ div .card.cardEleven {
 .card.cardTwelve {
   position: relative;
   /* text-align:center; */
- 
 }
 
 .card.card.cardTwelve img {
@@ -195,7 +221,6 @@ div .card.cardEleven {
   color: black;
   text-decoration: none;
 }
-
 
 .contact {
   /* align-self: flex-end; */
@@ -271,11 +296,18 @@ div .card.cardEleven {
   }
 
   div .card.cardSix {
-    background-image: url("./images/gin.jpeg");
+    /* background-image: url("./images/gin.jpeg"); */
     grid-area: cardSix;
-    /* width: 100%;
-    height :auto; */
   }
+
+  /* div .card.cardSix {
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+} */
+
 
   div .card.cardSeven {
     background-color: #ff7f50;
