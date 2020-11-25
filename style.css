@@ -249,6 +249,7 @@ div .link.link-two {
     top: 8px;
     left: 16px;
     text-decoration: none;
+    font-weight: bold;
   }
 
   .card.cardOne img {
@@ -257,14 +258,24 @@ div .link.link-two {
     /* display: block; */
   }
 
-  div .card.cardTwo {
+  .card.cardTwo {
+    border: 2px solid red;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  div .card.cardTwo div.text {
+  .card.cardTwo div.text {
+    display: flex;
+    flex-direction: column;
     color: black;
+    padding: 20px;
+  }
+
+  .cardTwo div.text div {
+    border: 1px solid red;
+    align-self: flex-start;
   }
 
   .card.cardFour {
@@ -286,7 +297,7 @@ div .link.link-two {
     /* padding: 16px 0; */
   }
 
-  div .card.cardSix {
+  .card.cardSix {
     background-image: url("./images/gin.jpeg");
     grid-area: cardSix;
     height: 480px;
@@ -304,6 +315,7 @@ div .link.link-two {
     top: 8px;
     left: 16px;
     text-decoration: none;
+    font-weight: bold;
   }
 
   .cardSeven {
