@@ -152,9 +152,11 @@ div .link.link-two {
   display: block;
 }
 
-.card.cardThree p {
+.card.cardThree p,
+.card.cardSix p,
+.card.cardTwelve a {
   position: absolute;
-  top: 30px;
+  top: 15px;
   left: 40px;
   text-decoration: none;
   font-weight: bold;
@@ -165,12 +167,6 @@ div .link.link-two {
 .card.cardFour {
   position: relative;
 }
-
-/* .card.cardFour img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-} */
 
 .card.cardFour p {
   position: absolute;
@@ -191,15 +187,6 @@ div .link.link-two {
   display: block;
 }
 
-.card.cardSix p {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-}
-
 .cardSeven {
   display: flex;
   align-items: center;
@@ -214,6 +201,10 @@ div .link.link-two {
 
 .parallax.cardEight {
   display: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 div .card.cardEleven {
@@ -240,8 +231,15 @@ div .card.cardEleven {
   padding-bottom: 3rem;
 }
 
+.card.cardTwelve {
+  position: relative;
+}
+
+.card.card.cardTwelve a {
+  color: black;
+}
+
 .card.card.cardTwelve img {
-  /* display: none; */
   max-height: 100%;
   max-width: 100%;
 }
@@ -415,14 +413,6 @@ div .card.cardEleven {
   .card.card.cardTwelve img {
     /* max-width: 100%; */
     max-height: 100%;
-  }
-
-  .card.card.cardTwelve a {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    color: black;
-    text-decoration: none;
   }
 
   .contact {
