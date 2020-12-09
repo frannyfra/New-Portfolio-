@@ -81,7 +81,7 @@ label {
 }
 
 .card {
-  /* padding: 1rem; */
+  padding: 1rem;
   min-height: 15rem;
   border: 2px solid black;
 }
@@ -178,6 +178,7 @@ div .link.link-two {
 }
 /* --card six-- */
 .card.cardSix {
+  min-height: 30rem;
   background-image: url("./images/gin.jpeg");
   position: relative;
 }
@@ -283,7 +284,7 @@ div .card.cardEleven {
   }
 
   .card {
-    min-height: 30rem;
+    height: 30rem;
   }
 
   .cards {
