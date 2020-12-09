@@ -81,9 +81,8 @@ label {
 }
 
 .card {
-  color: white;
   /* padding: 1rem; */
-  height: 15rem;
+  min-height: 15rem;
   border: 2px solid black;
 }
 
@@ -115,9 +114,112 @@ div .link.link-two {
   text-shadow: 1px 1px #9e9586;
 }
 
+.card.cardOne {
+  display: none;
+}
+
+.card.cardTwo {
+  /* padding: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card.cardTwo div.text {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 20px;
+}
+
+.cardTwo div.text div {
+  border: 1px solid red;
+  align-self: flex-start;
+}
+
+.card.cardSix {
+  background-image: url("./images/gin.jpeg");
+  position: relative;
+}
+
+.card.cardSix img {
+  max-width: 100%;
+  display: block;
+}
+
+.card.cardSix p {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.cardSeven {
+  display: flex;
+  align-items: center;
+}
+.card.cardSeven div.motto {
+  width: 15rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+}
+
+.parallax.cardEight {
+  display: none;
+}
+
+div .card.cardEleven {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card.cardEleven div.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  color: black;
+}
+
+.card.cardEleven div.content p {
+  margin: 2px;
+}
+
+.card.cardEleven div.content h3 {
+  padding-bottom: 3rem;
+}
+
+.card.card.cardTwelve img {
+  /* display: none; */
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* .card.cardTwelve {
+  border: 10px solid purple;
+  background: none;
+} */
+
+/* .outer-div {
+  border: 30px solid orange;
+  height: 100%;
+  width: 100%;
+} */
+
 @media (min-width: 550px) {
   .card {
     height: 25rem;
+  }
+
+  .card.cardSix img {
+    max-height: 100%;
   }
 }
 
@@ -190,17 +292,8 @@ div .link.link-two {
   }
 
   div .card.cardSix {
-    /* background-image: url("./images/gin.jpeg"); */
     grid-area: cardSix;
   }
-
-  /* div .card.cardSix {
-  display: flex;
-  justify-content: center;
-  background-size: cover;
-  color: white;
-  font-weight: bold;
-} */
 
   div .card.cardSeven {
     background-color: #ff7f50;
@@ -298,65 +391,12 @@ div .link.link-two {
   }
 
   .card.cardSix {
-    background-image: url("./images/gin.jpeg");
     grid-area: cardSix;
-    height: 480px;
-    position: relative;
-  }
-
-  .card.cardSix img {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-  }
-
-  .card.cardSix p {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .cardSeven {
-    display: flex;
-    align-items: center;
-  }
-  .card.cardSeven div.motto {
-    width: 15rem;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 22px;
   }
 
   .card.cardNine {
     color: white;
     background: black;
-  }
-
-  div .card.cardEleven {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card.cardEleven div.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid red;
-    color: black;
-  }
-
-  .card.cardEleven div.content p {
-    margin: 2px;
-    /* color: blue; */
-  }
-
-  .card.cardEleven div.content h3 {
-    padding-bottom: 3rem;
   }
 
   .card.cardTwelve {
