@@ -143,9 +143,7 @@ div .link.link-two {
 }
 /* --card three-- */
 .card.cardThree {
-  /* min-height: 30rem; */
   position: relative;
-  /* padding: 0; */
   background-image: url("./images/desk.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -176,7 +174,7 @@ div .link.link-two {
   color: black;
 }
 /* --card six-- */
-.card.cardSix {
+/* .card.cardSix {
   min-height: 30rem;
   background-image: url("./images/gin.jpeg");
   position: relative;
@@ -185,6 +183,15 @@ div .link.link-two {
 .card.cardSix img {
   max-width: 100%;
   display: block;
+} */
+
+/* --card three-- */
+.card.cardSix {
+  /* min-height: 30rem; */
+  position: relative;
+  background-image: url("./images/gin.jpeg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
 
 .cardSeven {
@@ -252,7 +259,8 @@ div .card.cardEleven {
   .card.cardSix img {
     max-height: 100%;
   }
-  .card.cardThree {
+  .card.cardThree,
+  .card.cardSix {
     min-height: 30rem;
   }
 }
