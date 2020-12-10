@@ -210,6 +210,28 @@ ul {
   list-style-type: none;
 }
 
+.card.cardNine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: black;
+  font-size: bold;
+}
+
+.list-box {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+
+.first,
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .card.cardEleven {
   display: flex;
   flex-direction: column;
@@ -219,7 +241,6 @@ ul {
 
 .cardEleven .header {
   width: 320px;
-
   font-size: 24px;
 }
 
@@ -504,6 +525,12 @@ ul {
   .card.cardEleven p {
     font-size: 22px;
   }
+
+  .list-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
 
 @media (min-width: 1329px) {
