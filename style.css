@@ -127,6 +127,7 @@ div .link.link-two {
 }
 
 .card.cardTwo div.text {
+  position: relative;
   padding: 40px;
 }
 
@@ -305,12 +306,10 @@ div .card.cardEleven {
   }
 
   div .card.cardTwo {
-    /* background-color: white; */
     grid-area: cardTwo;
   }
 
   div .card.cardThree {
-    /* background-color: white; */
     grid-area: cardThree;
   }
 
