@@ -8,6 +8,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  user-select: none;
 }
 
 html {
@@ -91,7 +92,6 @@ label {
 }
 
 .link {
-  /* background-color: #d6cec2; */
   height: 4rem;
   border: 2px solid black;
   text-align: center;
@@ -218,13 +218,18 @@ ul {
 }
 
 .cardEleven .header {
-  display: flex;
-  font-size: 26px;
-  margin: 70px 20px 60px 20px;
+  width: 320px;
+
+  font-size: 24px;
 }
 
 .card.cardEleven p {
   font-size: 22px;
+}
+
+.card.cardEleven span {
+  font-size: 22px;
+  margin-bottom: 1rem;
 }
 
 .card.cardTwelve {
@@ -481,6 +486,23 @@ ul {
 
   .cardNine {
     text-decoration: none;
+  }
+
+  .card.cardEleven {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+  }
+
+  .cardEleven .header {
+    display: flex;
+    font-size: 26px;
+    margin: 70px 20px 60px 20px;
+  }
+
+  .card.cardEleven p {
+    font-size: 22px;
   }
 }
 
