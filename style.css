@@ -14,6 +14,10 @@ html {
   font-family: "Syne", sans-serif;
 }
 
+p {
+  margin: 0;
+}
+
 .cards {
   display: grid;
   margin: 0 auto;
@@ -132,30 +136,34 @@ div .link.link-two {
 }
 
 .card.cardTwo a {
-  /* padding-left: 40px; */
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 40px;
   text-decoration: none;
   font-weight: bold;
   color: black;
-  align-self: flex-start;
 }
+
 /* --card three-- */
+
+.card.cardThree {
+  background-image: url("./images/desk.jpeg");
+}
+
 .card.cardThree,
 .card.cardSix,
 .card.cardTwelve {
   position: relative;
-  background-image: url("./images/desk.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .card.cardThree p,
 .card.cardSix p,
-.card.cardTwelve a {
+.card.cardTwelve a,
+.card.cardFour p {
   position: absolute;
-  top: 15px;
+  /* top: 15px; */
   left: 40px;
   text-decoration: none;
   font-weight: bold;
@@ -167,13 +175,15 @@ div .link.link-two {
   position: relative;
 }
 
-.card.cardFour p {
-  position: absolute;
-  top: 8px;
-  left: 16px;
+.card.cardFour p,
+.card.cardFive a {
+  color: black;
   text-decoration: none;
   font-weight: bold;
-  color: black;
+}
+
+.card.cardFive {
+  padding-left: 40px;
 }
 
 .card.cardSix {
@@ -200,28 +210,21 @@ ul {
   list-style-type: none;
 }
 
-div .card.cardEleven {
+.card.cardEleven {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.card.cardEleven div.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid red;
   color: black;
 }
 
-.card.cardEleven div.content p {
-  margin: 2px;
+.cardEleven .header {
+  display: flex;
+  font-size: 26px;
+  margin: 70px 20px 60px 20px;
 }
 
-.card.cardEleven div.content h3 {
-  padding-bottom: 3rem;
+.card.cardEleven p {
+  font-size: 22px;
 }
 
 .card.cardTwelve {
@@ -250,7 +253,8 @@ div .card.cardEleven {
     max-height: 100%;
   }
   .card.cardThree,
-  .card.cardSix {
+  .card.cardSix,
+  .card.CardTwelve {
     min-height: 30rem;
   }
 }
@@ -275,7 +279,7 @@ div .card.cardEleven {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     z-index: -1;
   }
@@ -394,13 +398,6 @@ div .card.cardEleven {
     color: black;
   }
 
-  .card.cardFive a {
-    top: 8px;
-    left: 16px;
-    text-decoration: none;
-    /* padding: 16px 0; */
-  }
-
   .card.cardSix {
     grid-area: cardSix;
   }
@@ -495,7 +492,7 @@ div .card.cardEleven {
     grid-template-areas:
       "cardOne cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree cardThree"
       "cardFour cardFour cardFour cardFive cardFive cardFive cardFive cardSix cardSix cardSix cardSix cardSix"
-      "cardSeven cardSeven cardEight cardEight cardEight cardEight cardEight cardEight cardEight  cardNine cardNine cardNine"
+      "cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight cardEight cardEight  cardNine cardNine cardNine"
       "cardTen cardTen cardTen cardTen cardEl cardEl cardEl cardEl cardTwelve cardTwelve cardTwelve cardTwelve"
       "linkOne linkOne linkOne linkOne linkTwo linkTwo linkTwo linkTwo linkThree linkThree linkThree linkThree";
   }
