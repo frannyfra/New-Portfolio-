@@ -159,9 +159,10 @@ div .link.link-two {
 }
 
 .card.cardThree p,
+.card.cardFour p,
 .card.cardSix p,
-.card.cardTwelve a,
-.card.cardFour p {
+.card.cardTen p,
+.card.cardTwelve a {
   position: absolute;
   /* top: 15px; */
   left: 40px;
@@ -176,7 +177,8 @@ div .link.link-two {
 }
 
 .card.cardFour p,
-.card.cardFive a {
+.card.cardFive a,
+.card.cardTen p {
   color: black;
   text-decoration: none;
   font-weight: bold;
@@ -217,6 +219,10 @@ ul {
   color: white;
   background: black;
   font-size: bold;
+}
+
+.card.cardNine p {
+  padding: 1rem;
 }
 
 .list-box {
@@ -516,6 +522,10 @@ ul {
     color: black;
   }
 
+  .card.cardNine p {
+    padding: 0;
+  }
+
   .cardEleven .header {
     display: flex;
     font-size: 26px;
@@ -530,7 +540,6 @@ ul {
     display: flex;
     flex-direction: column;
   }
-  
 }
 
 @media (min-width: 1329px) {
