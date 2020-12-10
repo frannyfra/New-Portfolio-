@@ -142,7 +142,9 @@ div .link.link-two {
   align-self: flex-start;
 }
 /* --card three-- */
-.card.cardThree {
+.card.cardThree,
+.card.cardSix,
+.card.cardTwelve {
   position: relative;
   background-image: url("./images/desk.jpeg");
   background-size: cover;
@@ -184,14 +186,15 @@ div .link.link-two {
   max-width: 100%;
   display: block;
 } */
-
-/* --card three-- */
+/* 
 .card.cardSix {
-  /* min-height: 30rem; */
   position: relative;
   background-image: url("./images/gin.jpeg");
   background-size: cover;
-  /* background-repeat: no-repeat; */
+} */
+
+.card.cardSix {
+  background-image: url("./images/gin.jpeg");
 }
 
 .cardSeven {
@@ -236,6 +239,10 @@ div .card.cardEleven {
 
 .card.cardEleven div.content h3 {
   padding-bottom: 3rem;
+}
+
+.card.cardTwelve {
+  background-image: url("./images/cvPic.jpeg");
 }
 
 .card.cardTwelve {
