@@ -88,10 +88,10 @@ label {
 
 .link {
   /* background-color: #d6cec2; */
-  height: 6rem;
+  height: 4rem;
   border: 2px solid black;
   text-align: center;
-  line-height: 6rem;
+  line-height: 4rem;
 }
 
 div .link.link-two {
@@ -175,23 +175,6 @@ div .link.link-two {
   font-weight: bold;
   color: black;
 }
-/* --card six-- */
-/* .card.cardSix {
-  min-height: 30rem;
-  background-image: url("./images/gin.jpeg");
-  position: relative;
-}
-
-.card.cardSix img {
-  max-width: 100%;
-  display: block;
-} */
-/* 
-.card.cardSix {
-  position: relative;
-  background-image: url("./images/gin.jpeg");
-  background-size: cover;
-} */
 
 .card.cardSix {
   background-image: url("./images/gin.jpeg");
@@ -273,6 +256,11 @@ div .card.cardEleven {
 }
 
 @media (min-width: 1045px) {
+  .link {
+    height: 6rem;
+    line-height: 6rem;
+  }
+
   .cards .parallax {
     display: block;
     position: relative;
