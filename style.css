@@ -166,6 +166,7 @@ div .link.link-two {
   position: absolute;
   /* top: 15px; */
   left: 40px;
+  padding-right: 30px;
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -200,6 +201,7 @@ div .link.link-two {
 .card.cardSeven div.motto {
   width: 15rem;
   margin: 0 auto;
+  padding: 30px 0px;
   text-align: center;
   font-size: 22px;
 }
