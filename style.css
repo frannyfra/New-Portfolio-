@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&family=Syne&display=swap");
 
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Syne', sans-serif; */
-
 html,
 body {
   width: 100%;
@@ -24,67 +21,66 @@ p {
   margin: 0 auto;
 }
 
-.logo {
-  position: absolute;
-  font-size: 26px;
-  height: 80px;
-  margin-left: 100px;
-  line-height: 80px;
-}
-
-label {
-  display: block;
-  cursor: pointer;
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 80px;
-  width: 26px;
-  float: right;
-}
-
-.navbar {
+/* Add a black background color to the top navigation */
+.topnav {
   border: 2px solid black;
   height: 80px;
   line-height: 80px;
 }
 
-.menu {
-  width: 100%;
+.topnav a {
   display: none;
-  margin: 0 30px 0 0;
 }
 
-.menu a {
-  display: block;
-  /* text-align!!! */
-  text-align: center;
-  text-decoration: none;
-  color: black;
+/* --- Francesca--- */
+.logo {
+  position: absolute;
+  font-size: 26px;
+  font-weight: bold;
+  height: 80px;
+  margin-left: 50px;
   line-height: 80px;
-  font-size: 20px;
 }
 
-.menu a:hover:not(:first-child) {
-  color: #d6cec2;
-  text-shadow: #9e9586;
+/* burger menu */
+.topnav a.icon {
+  display: block;
+  float: right;
+  cursor: pointer;
+  margin: 0 40px 0 0;
+  font-size: 28px;
+  line-height: 80px;
+  width: 28px;
+  color: black;
 }
 
-#toggle:checked + body {
+.topnav.responsive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 100vh;
+  position: relative;
   background-color: #d6cec2;
 }
 
-#toggle {
-  display: none;
-}
-
-#toggle:checked + .menu {
+.topnav.responsive a:not(:first-child) {
+  text-decoration: none;
+  color: black;
   display: block;
+  text-align: center;
+  font-size: 38px;
 }
 
-#toggle:checked + .menu a:first-child {
-  display: none;
+.topnav.responsive a.icon {
+  padding-top: 0px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 38px;
 }
-
+/* --- crads ---- */
 .card {
   padding: 1rem;
   min-height: 15rem;
@@ -145,7 +141,6 @@ div .link.link-two {
 }
 
 /* --card three-- */
-
 .card.cardThree {
   background-image: url("./images/desk.jpeg");
 }
@@ -283,6 +278,10 @@ ul {
     height: 25rem;
   } */
 
+  /* .topnav .icon {
+    display: none;
+  } */
+
   .card.cardSix img {
     max-height: 100%;
   }
@@ -294,6 +293,32 @@ ul {
 }
 
 @media (min-width: 1045px) {
+  .topnav a:not(:first-child) {
+    float: right;
+  }
+
+  .topnav a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    line-height: 80px;
+    font-size: 26px;
+    margin: 0 30px 0 0;
+  }
+
+  .logo,
+  .topnav a.icon {
+    display: none;
+  }
+
+  .topnav a:first-child {
+    margin: 0;
+    background-color: #d6cec2;
+    float: left;
+    border-right: 5px solid black;
+    padding: 0 250px 0 130px;
+    font-size: 26px;
+  }
   .link {
     height: 6rem;
     line-height: 6rem;
@@ -470,39 +495,6 @@ ul {
 
   #toggle + .menu {
     display: block;
-  }
-
-  .navbar {
-    text-align: right;
-    /* nav border in big screen and desktop */
-    border: 2px solid black;
-  }
-
-  .menu {
-    margin: 0 30px 0 0;
-  }
-
-  .menu a:first-child {
-    margin: 0;
-    background-color: #d6cec2;
-    float: left;
-    border-right: 4px solid black;
-    padding: 0 250px 0 130px;
-    font-size: 26px;
-  }
-
-  .menu a {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    line-height: 80px;
-    font-size: 20px;
-    margin: 0 22px;
-  }
-
-  .menu a:last-child {
-    margin-right: 70px;
   }
 
   label {

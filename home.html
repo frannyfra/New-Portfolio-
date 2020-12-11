@@ -17,17 +17,17 @@
       <header class="logo">
         Francesca
       </header>
-      <nav class="navbar">
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle" />
-
-        <div class="menu">
-          <a href="#" class="name">Francesca De Laurentis</a>
-          <a href="#">Home</a>
-          <a href="./about.html">About</a>
-          <a href="./about.html">Projects</a>
-        </div>
-      </nav>
+      <div class="topnav" id="myTopnav">
+        <div class="list-item-container">
+        <a href="#" class="active">Francesca De Laurentis</a>
+        <a href="#./home.html">Home</a>
+        <a href="#./about.html">About</a>
+        <a href="#./about.html">Projects</a>
+  
+        <a href="javascript:void(0);" class="icon" onclick="toggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
 
     <div class="cards">
@@ -38,67 +38,63 @@
         </div>
       </div>
 
-      <div class="card cardTwo">
-        <a href="./about.html" >about_me></a>
-        <div class="text">
-          <h3> Hello, I am Francesca </h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
+    <div class="card cardTwo">
+      <a href="./about.html" >about_me></a>
+      <div class="text">
+        <h3> Hello, I am Francesca </h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
-
-
-      <!-- <img src="./images/desk.jpeg" /> -->
-    
-      <div class="card cardThree">
-        <p>my_work_space</p> 
+    </div>
+    <div class="card cardThree">
+      <p>my_work_space</p> 
+    </div>
+    <div class="card cardFour">
+      <p>
+        some_projects
+      </p>
+    </div>
+    <div class="card cardFive">
+        <a href="./about.html" >my_projects > </a>
+    </div>
+    <div class="card cardSix">
+      <p>Gin > Despite her appereance she is the sweetest dog ever</p> 
+    </div>
+    <div class="card cardSeven">
+      <div class="motto">
+        <p>When I went to school, they asked me what I wanted to be when I grew up. I wrote down 'happy'. They told me I didn't understand the assignment, and I told them they didn't understand life."</p>
+        <p>Jhon Lennon</p>
       </div>
-      <div class="card cardFour">
-        <p>
-          some_projects
-        </p>
-      </div>
-      <div class="card cardFive">
-          <a href="./about.html" >my_projects > </a>
-      </div>
-      <div class="card cardSix">
-        <p>Gin > Despite her appereance she is the sweetest dog ever</p> 
-      </div>
-      <div class="card cardSeven">
-        <div class="motto">
-          <p>When I went to school, they asked me what I wanted to be when I grew up. I wrote down 'happy'. They told me I didn't understand the assignment, and I told them they didn't understand life."</p>
-          <p>Jhon Lennon</p>
-        </div>
-      </div>
-      <div class="parallax cardEight">
-        <p>a_nice_motto</p>
-      </div>
-      <div class="card cardNine">
-        <p>my_skills</p>
-        <div class="list-box">
-            <div class="first">
-                <ul>
-                  <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Ability to learn</p>
-                </ul>
-                <ul>
-                  <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Problem-solver</p>
-                </ul>
-                <ul>
-                  <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Organised Time Management</p>
-                </ul>
-            </div>
-            <div class="second">
+    </div>
+    <div class="parallax cardEight">
+      <p>a_nice_motto</p>
+    </div>
+    <div class="card cardNine">
+      <p>my_skills</p>
+      <div class="list-box">
+          <div class="first">
               <ul>
-                  <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Creative Spirit</p>
+                <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Ability to learn</p>
               </ul>
               <ul>
-                <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Curios Individual</p>
+                <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Problem-solver</p>
               </ul>
               <ul>
-                <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Team Player</p>
+                <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Organised Time Management</p>
               </ul>
-            </div>
-        </div>
+          </div>
+          <div class="second">
+            <ul>
+                <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Creative Spirit</p>
+            </ul>
+            <ul>
+              <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Curios Individual</p>
+            </ul>
+            <ul>
+              <li><i class="fa fa-anchor" aria-hidden="true"></i></li><p>Team Player</p>
+            </ul>
+          </div>
       </div>
+    </div>
       <div class="card cardTen">
         <p>my_passions</p>
       </div>
@@ -131,7 +127,14 @@
         <a href="https://github.com/frannyfra" target="blank">GitHub</a>
       </div>
     </div>
-
-    <script src="main.js"></script>
+    <script>
+      const toggle = () => {
+          let element = document.getElementById("myTopnav");
+          element.className === "topnav" ? 
+          element.className += " responsive" 
+          : 
+          element.className = "topnav";
+      }
+      </script>
   </body>
 </html>
