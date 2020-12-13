@@ -582,12 +582,16 @@ hr {
 .text {
   border: 2px solid blue;
 }
-
+/* ---mobile===? */
 .image {
   height: 180px;
   border: 2px solid grey;
+  background-image: url("./images/desk.jpeg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-img {
-  width: 100%;
+/* after 600px */
+.image {
+  min-height: 400px;
 }
