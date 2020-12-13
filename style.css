@@ -599,8 +599,7 @@ hr {
     border: 2px solid green;
   }
 
-  .about-text,
-  .projects {
+  .about-text{
     width: 77%;
     /* border: 2px solid orange; */
     column-count: 2;
@@ -610,15 +609,23 @@ hr {
 
   .projects {
     padding: 0;
+    width: 77%;
+    display:flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
   }
   .about-text p {
     font-size: 22px;
   }
 
+  .single-project{
+    border: 1px solid brown;
+  }
+
   .hr {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
   }
 
   hr {
@@ -629,9 +636,10 @@ hr {
     padding-left: 20px;
   }
 
+
   .project-one {
-    width: 30%;
-  }
+    border: 2px solid magenta;
+  } 
 
   .image {
     height: 500px;
