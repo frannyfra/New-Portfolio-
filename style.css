@@ -23,7 +23,7 @@ p {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 80px;
   line-height: 80px;
   /* background: red; */
@@ -39,7 +39,7 @@ p {
   font-size: 26px;
   font-weight: bold;
   height: 80px;
-  margin-left: 50px;
+  margin-left: 40px;
   line-height: 80px;
 }
 
@@ -84,8 +84,9 @@ p {
 /* --- crads ---- */
 .card {
   padding: 1rem;
-  min-height: 15rem;
-  border: 2px solid black;
+  min-height: 20rem;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .link {
@@ -240,6 +241,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: black;
 }
 
@@ -254,7 +256,7 @@ ul {
 
 .card.cardEleven span {
   font-size: 22px;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .card.cardTwelve {
@@ -275,10 +277,6 @@ ul {
 }
 
 @media (min-width: 550px) {
-  /* .card {
-    height: 25rem;
-  } */
-
   /* .topnav .icon {
     display: none;
   } */
@@ -295,7 +293,7 @@ ul {
 
 @media (min-width: 1045px) {
   .topnav {
-    border: 2px solid black;
+    border: 3px solid black;
     height: 110px;
     line-height: 110px;
   }
@@ -324,13 +322,18 @@ ul {
     background-color: #d6cec2;
     float: left;
     border-right: 6px solid black;
-    padding: 0 250px 0 130px;
+    padding: 0 250px 0 120px;
     font-size: 26px;
   }
 
   .link {
     height: 6rem;
     line-height: 6rem;
+  }
+
+  .card {
+    /* height: 25rem; */
+    border: 2px solid black;
   }
 
   .cards .parallax {
@@ -490,21 +493,21 @@ ul {
     color: black;
   }
 
-  #toggle:checked + .menu a:first-child {
+  /* #toggle:checked + .menu a:first-child {
     display: block;
-  }
+  } */
 
   .logo {
     display: none;
   }
 
-  .menu a:first-child {
+  /* .menu a:first-child {
     display: block;
   }
 
   #toggle + .menu {
     display: block;
-  }
+  } */
 
   label {
     display: none;
@@ -532,7 +535,8 @@ ul {
   .cardEleven .header {
     display: flex;
     font-size: 26px;
-    margin: 70px 20px 60px 20px;
+    /* margin: 70px 20px 60px 20px; */
+    margin-bottom: 70px;
   }
 
   .card.cardEleven p {
@@ -561,4 +565,29 @@ ul {
   .link {
     background-color: white;
   }
+}
+
+/* ---about page--- */
+
+.about,
+.projects {
+  border: 2px solid red;
+  padding: 40px;
+}
+
+hr {
+  margin-bottom: 30px;
+}
+
+.text {
+  border: 2px solid blue;
+}
+
+.image {
+  height: 180px;
+  border: 2px solid grey;
+}
+
+img {
+  width: 100%;
 }
