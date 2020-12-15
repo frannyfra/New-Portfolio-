@@ -23,8 +23,8 @@ p {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  height: 80px;
-  line-height: 80px;
+  height: 90px;
+  line-height: 90px;
   background: white;
 }
 
@@ -600,12 +600,12 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* border: 10px solid blueviolet; */
   }
 
   .projects {
     padding: 0;
-    width: 57%;
+    max-width: 57%;
+    min-width: 57%;
     display: flex;
     flex-direction: column;
   }
@@ -623,7 +623,8 @@ hr {
     /* border: 2px solid greenyellow; */
   }
 
-  .about-text p {
+  .about-text p,
+  .single-project p {
     font-size: 22px;
   }
 
@@ -647,6 +648,18 @@ hr {
   .image {
     height: 500px;
     /* border: 2px solid yellow; */
+  }
+
+  footer {
+    margin-top: 40px;
+    border: 2px solid red;
+    height : 90px;
+    width : 100%
+
+  }
+
+  .icon-container {
+    border: 2px solid black;
   }
 }
 
