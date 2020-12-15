@@ -23,10 +23,9 @@ p {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  /* border: 2px solid black; */
   height: 80px;
   line-height: 80px;
-  /* background: red; */
+  background: white;
 }
 
 .topnav a {
@@ -76,6 +75,7 @@ p {
 }
 
 .topnav.responsive a.icon {
+  /* display: block; */
   padding-top: 0px;
   position: absolute;
   right: 0;
@@ -279,10 +279,13 @@ ul {
 
 /* ---about page--- */
 
-.about,
-.projects {
+.about {
   padding: 40px;
 }
+
+/* .projects {
+  padding:40px;
+} */
 
 hr {
   margin-bottom: 30px;
@@ -322,10 +325,17 @@ hr {
 }
 
 @media (min-width: 1045px) {
-  .topnav {
+  .topnav,
+  .topnav.responsive {
+    display: block;
     border: 3px solid black;
     height: 110px;
     line-height: 110px;
+    background: white;
+  }
+
+  .topnav.responsive a:not(:first-child) {
+    font-size: 26px;
   }
 
   .topnav a:not(:first-child) {
@@ -342,7 +352,8 @@ hr {
   }
 
   .logo,
-  .topnav a.icon {
+  .topnav a.icon,
+  .topnav.responsive a.icon {
     display: none;
   }
 
@@ -582,51 +593,47 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 150px;
-    border: 2px solid orchid;
   }
 
   .projects {
     /* margin-top: 40px; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    border: 2px solid blueviolet;
-  }
-
-  .about-title,
-  .projects-header {
-    width: 80%;
-    border: 2px solid green;
-  }
-
-  .about-text{
-    width: 77%;
-    /* border: 2px solid orange; */
-    column-count: 2;
-    column-gap: 70px;
-    border: 2px solid greenyellow;
+    /* border: 10px solid blueviolet; */
   }
 
   .projects {
     padding: 0;
-    width: 77%;
-    display:flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
+    width: 57%;
+    display: flex;
+    flex-direction: column;
   }
+
+  .about-title,
+  .projects-header {
+    width: 60%;
+    /* border: 2px solid green; */
+  }
+
+  .about-text {
+    width: 57%;
+    column-count: 2;
+    column-gap: 70px;
+    /* border: 2px solid greenyellow; */
+  }
+
   .about-text p {
     font-size: 22px;
   }
 
-  .single-project{
-    border: 1px solid brown;
+  .wrap {
+    column-count: 2;
+    column-gap: 70px;
   }
 
   .hr {
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: flex-end; */
   }
 
   hr {
@@ -637,14 +644,9 @@ hr {
     padding-left: 20px;
   }
 
-
-  .project-one {
-    border: 2px solid magenta;
-  } 
-
   .image {
     height: 500px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
   }
 }
 
