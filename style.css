@@ -284,10 +284,6 @@ ul {
   padding: 40px;
 }
 
-/* .projects {
-  padding:40px;
-} */
-
 hr {
   margin-bottom: 30px;
 }
@@ -300,7 +296,6 @@ hr {
 .image {
   min-height: 180px;
   max-height: 300px;
-  border: 2px solid grey;
   background-image: url("./images/desk.jpeg");
   position: relative;
   background-size: cover;
@@ -346,7 +341,7 @@ hr {
     color: black;
     line-height: 110px;
     font-size: 26px;
-    margin: 0 50px 0 0;
+    margin: 0 40px 0 0;
   }
 
   .logo,
@@ -527,26 +522,12 @@ hr {
   }
 
   .contact {
-    /* align-self: flex-end; */
-    /* border: 4px solid purple; */
     color: black;
   }
-
-  /* #toggle:checked + .menu a:first-child {
-    display: block;
-  } */
 
   .logo {
     display: none;
   }
-
-  /* .menu a:first-child {
-    display: block;
-  }
-
-  #toggle + .menu {
-    display: block;
-  } */
 
   label {
     display: none;
@@ -651,22 +632,26 @@ hr {
 
   .image {
     height: 500px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     margin-bottom: 30px;
   }
 
-  footer {
-    margin-top: 40px;
-    border: 2px solid red;
+  .icon-container {
+    /* border: 2px solid black; */
+    height: 45px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+
+  .icon-container {
+    /* border: 2px solid red; */
     height: 90px;
     width: 57%;
   }
 
-  .icon-container {
-    border: 2px solid black;
-    height: 45px;
+  .icon-container img {
+    margin: 20px 20px 20px 0px;
   }
-
   .single-project h3 {
     margin: 40px 0px;
   }
