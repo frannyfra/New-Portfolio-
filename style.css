@@ -283,19 +283,19 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid red; */
+  border: 2px solid orchid;
 }
 
-.about {
+.about-title {
   padding: 40px;
 }
 
-hr {
+/* hr {
   margin-bottom: 30px;
-}
+} */
 
-.text {
-  /* border: 2px solid blue; */
+.about-text {
+  border: 2px solid purple;
   font-size: 22px;
 }
 
@@ -310,6 +310,81 @@ hr {
 
 .hr {
   display: none;
+}
+
+/* ---about number two-- */
+
+.about-title,
+.projects-header {
+  width: 60%;
+  /* border: 2px solid green; */
+  margin-top: 90px;
+}
+
+.about-text {
+  width: 57%;
+  /* column-count: 2;
+  column-gap: 70px; */
+  /* border: 2px solid greenyellow; */
+}
+
+.about-text p,
+.single-project p {
+  font-size: 22px;
+}
+
+.wrap {
+  /* border: 2px solid red; */
+  margin-bottom: 50px;
+  /* column-count: 2;
+  column-gap: 70px; */
+}
+
+.hr {
+  display: flex;
+}
+
+hr {
+  width: 50%;
+  margin-top: 40px;
+}
+
+.about-title p,
+.projects-header p {
+  padding-left: 20px;
+  font-size: 32px;
+}
+
+.image {
+  height: 500px;
+  /* border: 2px solid yellow; */
+  margin-bottom: 30px;
+}
+
+.icon-container {
+  /* border: 2px solid black; */
+  height: 45px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+.icon-container {
+  /* border: 2px solid red; */
+  height: 90px;
+  width: 57%;
+}
+
+.icon-container img {
+  margin: 20px 20px 20px 0px;
+}
+
+.icon-container p {
+  color: grey;
+  font-size: 20px;
+}
+
+.single-project h3 {
+  margin: 40px 0px;
 }
 
 @media (min-width: 550px) {
@@ -622,6 +697,10 @@ hr {
     width: 45%;
     margin-top: 40px;
   }
+
+  hr {
+  margin-bottom: 30px;
+}
 
   .about-title p,
   .projects-header p {
