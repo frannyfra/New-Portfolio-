@@ -668,6 +668,7 @@ hr {
     width: 60%;
     /* border: 2px solid green; */
     margin-top: 90px;
+    padding: 40px;
   }
 
   .about-text {
@@ -696,11 +697,12 @@ hr {
   hr {
     width: 45%;
     margin-top: 40px;
+    border: 2px solid blueviolet;
   }
 
-  hr {
+  /* hr {
   margin-bottom: 30px;
-}
+} */
 
   .about-title p,
   .projects-header p {
