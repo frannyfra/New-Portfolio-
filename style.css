@@ -283,7 +283,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid orchid;
 }
 
 .about-title {
@@ -385,7 +384,8 @@ hr {
     min-height: 30rem;
   }
 
-  .about-title {
+  .about-title,
+  .projects-header {
     width: 60%;
   }
 
@@ -393,9 +393,10 @@ hr {
     display: flex;
   }
 
-  .about-text {
+  .about-text,
+  .projects,
+  .icon-container {
     width: 60%;
-    border: 2px solid red;
   }
 }
 
@@ -574,7 +575,6 @@ hr {
   .card.cardOne img {
     width: 100%;
     max-height: 100%;
-    /* display: block; */
   }
 
   .card.cardFour {
@@ -599,7 +599,6 @@ hr {
   }
 
   .card.card.cardTwelve img {
-    /* max-width: 100%; */
     max-height: 100%;
   }
 
@@ -676,7 +675,6 @@ hr {
     width: 57%;
     column-count: 2;
     column-gap: 70px;
-    /* border: 2px solid greenyellow; */
   }
 
   .about-text p,
@@ -685,7 +683,6 @@ hr {
   }
 
   .wrap {
-    /* border: 2px solid red; */
     margin-bottom: 50px;
     column-count: 2;
     column-gap: 70px;
@@ -698,12 +695,7 @@ hr {
   hr {
     width: 45%;
     margin-top: 40px;
-    border: 2px solid blueviolet;
   }
-
-  /* hr {
-  margin-bottom: 30px;
-} */
 
   .about-title p,
   .projects-header p {
@@ -713,19 +705,16 @@ hr {
 
   .image {
     height: 500px;
-    /* border: 2px solid yellow; */
     margin-bottom: 30px;
   }
 
   .icon-container {
-    /* border: 2px solid black; */
     height: 45px;
     margin-bottom: 80px;
     margin-top: 30px;
   }
 
   .icon-container {
-    /* border: 2px solid red; */
     height: 90px;
     width: 57%;
   }
