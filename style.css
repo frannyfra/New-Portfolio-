@@ -290,12 +290,8 @@ ul {
   padding: 40px;
 }
 
-/* hr {
-  margin-bottom: 30px;
-} */
-
 .about-text {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   font-size: 22px;
 }
 
@@ -320,10 +316,10 @@ ul {
 }
 
 .about-text {
-  width: 57%;
+  width: 75%;
   /* column-count: 2;
   column-gap: 70px; */
-  /* border: 2px solid greenyellow; */
+  border: 2px solid greenyellow;
 }
 
 .about-text p,
@@ -345,7 +341,7 @@ hr {
 
 .about-title p,
 .projects-header p {
-  padding-left: 20px;
+  padding-right: 30px;
   font-size: 32px;
 }
 
@@ -393,12 +389,15 @@ hr {
 
   .about-title {
     width: 60%;
-    /* border: 2px solid green; */
-    /* margin-top: 90px; */
   }
 
   .hr {
     display: flex;
+  }
+
+  .about-text {
+    width: 60%;
+    border: 2px solid red;
   }
 }
 
