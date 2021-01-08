@@ -319,11 +319,6 @@ ul {
   margin-top: 90px;
 }
 
-.about-title {
-  /* border: 2px solid green; */
-  /* margin-top: 90px; */
-}
-
 .about-text {
   width: 57%;
   /* column-count: 2;
@@ -342,10 +337,6 @@ ul {
   /* column-count: 2;
   column-gap: 70px; */
 }
-
-/* .hr {
-  display: flex;
-} */
 
 hr {
   width: 50%;
@@ -398,6 +389,16 @@ hr {
   .card.cardSix,
   .card.CardTwelve {
     min-height: 30rem;
+  }
+
+  .about-title {
+    width: 60%;
+    /* border: 2px solid green; */
+    /* margin-top: 90px; */
+  }
+
+  .hr {
+    display: flex;
   }
 }
 
