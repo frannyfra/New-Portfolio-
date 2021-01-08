@@ -311,7 +311,9 @@ ul {
 /* ---about number two-- */
 .about-text,
 .about-title,
-.projects-header {
+.projects-header,
+.projects,
+.icon-container {
   width: 75%;
 }
 
@@ -352,9 +354,7 @@ hr {
 }
 
 .icon-container {
-  /* border: 2px solid red; */
   height: 90px;
-  width: 57%;
 }
 
 .icon-container img {
