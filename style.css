@@ -83,6 +83,7 @@ p {
   top: 0;
   font-size: 38px;
 }
+
 /* --- crads ---- */
 .card {
   padding: 1rem;
@@ -133,6 +134,17 @@ div .link.link-two {
 .card.cardTwo div.text {
   position: relative;
   padding: 40px;
+  /* color: yellow; */
+}
+
+.text {
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.text h3 {
+  font-size: 24px;
 }
 
 .card.cardTwo a {
@@ -203,6 +215,7 @@ div .link.link-two {
   padding: 30px 0px;
   text-align: center;
   font-size: 22px;
+  line-height: 32px;
 }
 
 .parallax.cardEight {
@@ -398,9 +411,24 @@ hr {
   .icon-container {
     width: 60%;
   }
+
+  .text {
+    font-size: 26px;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  .text h3 {
+    font-size: 30px;
+  }
+
+  .card.cardTwo div.text {
+    position: relative;
+    padding: 40px 160px;
+  }
 }
 
-@media (min-width: 1045px) {
+@media (min-width: 1250px) {
   .topnav,
   .topnav.responsive {
     display: block;
@@ -575,6 +603,10 @@ hr {
   .card.cardOne img {
     width: 100%;
     max-height: 100%;
+  }
+
+  .card.cardTwo div.text {
+    padding: 40px;
   }
 
   .card.cardFour {
