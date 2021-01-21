@@ -106,7 +106,7 @@ div .link.link-two {
   text-decoration: none;
   cursor: pointer;
   color: black;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .link p {
@@ -154,6 +154,7 @@ div .link.link-two {
   /* left: 40px; */
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
   color: black;
 }
 
@@ -188,6 +189,7 @@ div .link.link-two {
   top: 25px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
   color: white;
 }
 
@@ -204,6 +206,8 @@ div .link.link-two {
 .card.cardNine h5 {
   padding-top: 10px;
   margin: 0px;
+  font-weight: bold;
+  font-size: 18px;
 }
 .card.cardFour p,
 .card.cardFive a,
