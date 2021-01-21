@@ -76,7 +76,6 @@ p {
 }
 
 .topnav.responsive a.icon {
-  /* display: block; */
   padding-top: 0px;
   position: absolute;
   right: 0;
@@ -84,7 +83,7 @@ p {
   font-size: 38px;
 }
 
-/* --- crads ---- */
+/* --- cards ---- */
 .card {
   padding: 1rem;
   min-height: 20rem;
@@ -134,7 +133,6 @@ div .link.link-two {
 .card.cardTwo div.text {
   position: relative;
   padding: 40px;
-  /* color: yellow; */
 }
 
 .text {
@@ -149,8 +147,8 @@ div .link.link-two {
 
 .card.cardTwo a {
   position: absolute;
-  top: 20px;
-  left: 40px;
+  top: 25px;
+  /* left: 40px; */
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -211,6 +209,7 @@ div .link.link-two {
 
 .card.cardSeven div.motto {
   width: 15rem;
+  /* padding: 40px 160px; */
   margin: 0 auto;
   padding: 30px 0px;
   text-align: center;
@@ -253,8 +252,7 @@ ul {
 }
 
 .card.cardEleven,
-.cardEleven .header
- {
+.cardEleven .header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,10 +270,10 @@ ul {
 }
 
 .cardEleven .header p {
-  color: black;
   font-size: 24px;
   font-weight: bold;
 }
+
 .card.cardEleven span {
   font-size: 22px;
   margin-bottom: 2.5rem;
