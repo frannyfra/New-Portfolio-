@@ -163,8 +163,16 @@ div .link.link-two {
 }
 
 .card.cardThree,
+.cardFour,
+.cardFive,
 .card.cardSix,
-.card.cardTwelve {
+.cardNine,
+.card.cardTwelve,
+.card.cardTen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -176,12 +184,16 @@ div .link.link-two {
 .card.cardTen p,
 .card.cardTwelve a {
   position: absolute;
-  /* top: 15px; */
-  left: 40px;
-  padding-right: 30px;
+  top: 25px;
+  /* left: 40px; */
+  /* padding-right: 30px; */
   text-decoration: none;
   font-weight: bold;
   color: white;
+}
+
+.card.cardSix p {
+  padding: 0px 50px;
 }
 
 /* --card four-- */
@@ -197,9 +209,9 @@ div .link.link-two {
   font-weight: bold;
 }
 
-.card.cardFive {
+/* .card.cardFive {
   padding-left: 40px;
-}
+} */
 
 .card.cardSix {
   background-image: url("./images/gin.jpeg");
