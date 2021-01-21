@@ -180,20 +180,15 @@ div .link.link-two {
 
 .card.cardThree p,
 .card.cardFour p,
+.card.cardFive a,
 .card.cardSix p,
 .card.cardTen p,
 .card.cardTwelve a {
   position: absolute;
   top: 25px;
-  /* left: 40px; */
-  /* padding-right: 30px; */
   text-decoration: none;
   font-weight: bold;
   color: white;
-}
-
-.card.cardSix p {
-  padding: 0px 50px;
 }
 
 /* --card four-- */
@@ -201,9 +196,19 @@ div .link.link-two {
   position: relative;
 }
 
+/* add font for sskill */
+.card.cardSix p {
+  padding: 0px 50px;
+}
+
+.card.cardNine h5 {
+  padding-top: 10px;
+  margin: 0px;
+}
 .card.cardFour p,
 .card.cardFive a,
 .card.cardTen p {
+  /* top: 25px; */
   color: black;
   text-decoration: none;
   font-weight: bold;
