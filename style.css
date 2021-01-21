@@ -420,6 +420,15 @@ hr {
   margin-bottom: 40px;
 }
 
+.link.link-one a img,
+.link.link.link-three a img {
+  
+}
+{
+  width: 100px;
+  height: 25px;
+}
+
 @media (min-width: 550px) {
   .card.cardSix img {
     max-height: 100%;
