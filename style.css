@@ -133,6 +133,9 @@ div .link.link-two {
 .card.cardTwo div.text {
   position: relative;
   padding: 40px;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  /* width: 15rem; */
 }
 
 .text {
@@ -208,10 +211,10 @@ div .link.link-two {
 }
 
 .card.cardSeven div.motto {
-  width: 15rem;
+  /* width: 15rem; */
   /* padding: 40px 160px; */
+  padding: 40px;
   margin: 0 auto;
-  padding: 30px 0px;
   text-align: center;
   font-size: 22px;
   line-height: 32px;
@@ -249,6 +252,10 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.card.cardEleven {
+  padding: 40px;
 }
 
 .card.cardEleven,
