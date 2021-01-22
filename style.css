@@ -210,8 +210,7 @@ div .link.link-two {
   font-size: 18px;
 }
 .card.cardFour p,
-.card.cardFive a,
-.card.cardTen p {
+.card.cardFive a{
   /* top: 25px; */
   color: black;
   text-decoration: none;
@@ -241,6 +240,10 @@ div .link.link-two {
   line-height: 32px;
 }
 
+
+.cardTen {
+  background-image: url("./images/meditation.jpeg");
+}
 .parallax.cardEight {
   display: none;
 }
@@ -259,27 +262,23 @@ ul {
 }
 
 .card.cardNine p {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .list-box {
-  border: 2px solid yellow;
-  /* max-width: 800px; */
   display: flex;
   flex-direction: row;
+  padding-left: 50px;
+  padding-top: 20px;
 }
 
 .first,
 .second {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-}
-
-.second {
-  border: 2px solid pink;
 }
 
 .first ul,
@@ -435,10 +434,13 @@ hr {
   margin-bottom: 40px;
 }
 
-.link.link-one a img,
-.link.link.link-three a img {
+.link.link-one a img {
   width: 100px;
   height: 25px;
+}
+
+.link.link-three a img {
+  height: 24px;
 }
 
 @media (min-width: 550px) {
