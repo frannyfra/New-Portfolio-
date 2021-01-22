@@ -145,7 +145,7 @@ div .link.link-two {
 }
 
 .text h3 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .card.cardTwo a {
@@ -468,17 +468,20 @@ hr {
     width: 60%;
   }
 
-  .text {
-    font-size: 26px;
-    line-height: 46px;
+  .text,
+  .motto p
+  {
+    font-size: 24px;
+    line-height: 34px;
     text-align: center;
   }
 
   .text h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
-  .card.cardTwo div.text {
+  .card.cardTwo div.text,
+  .card.cardSeven div.motto {
     position: relative;
     padding: 40px 160px;
   }
