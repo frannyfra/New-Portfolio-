@@ -263,16 +263,31 @@ ul {
 }
 
 .list-box {
-  max-width: 800px;
+  border: 2px solid yellow;
+  /* max-width: 800px; */
   display: flex;
   flex-direction: row;
 }
 
 .first,
 .second {
+  border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
+}
+
+.second {
+  border: 2px solid pink;
+}
+
+.first ul,
+.first p,
+.second p,
+.second ul {
+  padding: 0px;
+  font-weight: bold;
 }
 
 .card.cardEleven {
