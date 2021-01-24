@@ -201,7 +201,7 @@ div .link.link-two {
   padding-top: 17px;
   padding-bottom: 20px;
   margin: 0px;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -343,12 +343,27 @@ ul {
 }
 
 .image {
-  min-height: 180px;
-  max-height: 300px;
-  background-image: url("./images/desk.jpeg");
+  /* /* min-height: 180px; */
+  /* max-height: 300px; */
+  /* max-width: 100%; */
+  max-width: 330;
+  /* max-height: 305; */
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.imgOne {
+  /* background-image: url("./images/weWillMeetUpAgain.png"); */
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border: 2px solid yellow;
+}
+
+.imgTwo {
+  background-image: url("./images/framePic.jpeg");
+  object-fit: cover;
 }
 
 .hr {
@@ -390,10 +405,10 @@ hr {
   font-weight: bold;
 }
 
-.image {
+/* .image {
   height: 500px;
   margin-bottom: 30px;
-}
+} */
 
 .icon-container {
   /* border: 2px solid black; */
@@ -769,7 +784,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items :center;
+    align-items: center;
     /* padding-left: 40px; */
     padding-top: 60px;
   }
@@ -828,10 +843,10 @@ hr {
     font-size: 32px;
   }
 
-  .image {
+  /* .image {
     height: 500px;
     margin-bottom: 30px;
-  }
+  } */
 
   .icon-container {
     height: 45px;
