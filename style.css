@@ -343,8 +343,6 @@ ul {
 }
 
 .image {
-  /* max-width: 330;
-  max-height: 280.34px; */
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -356,10 +354,7 @@ ul {
   width: 100%;
   height: auto;
   border: 2px solid yellow;
-}
-
-.imgTwo {
-height: 280.34px;
+  height: 280.34px;
 }
 
 .hr {
@@ -431,8 +426,8 @@ hr {
 }
 
 /* .single-project { */
-  /* border: 2px solid purple; */
-  /* margin-bottom: 40px; */
+/* border: 2px solid purple; */
+/* margin-bottom: 40px; */
 /* } */
 
 .link.link-one a img {
