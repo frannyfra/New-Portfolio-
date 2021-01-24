@@ -139,8 +139,8 @@ div .link.link-two {
 }
 
 .text {
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -198,9 +198,10 @@ div .link.link-two {
 }
 
 .card.cardNine h5 {
-  padding-top: 10px;
+  padding-top: 17px;
+  padding-bottom: 20px;
   margin: 0px;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 16px;
 }
 
@@ -222,13 +223,11 @@ div .link.link-two {
 }
 
 .card.cardSeven div.motto {
-  /* width: 15rem; */
-  /* padding: 40px 160px; */
   padding: 40px;
   margin: 0 auto;
   text-align: center;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .cardTen {
@@ -240,7 +239,7 @@ div .link.link-two {
 
 ul {
   list-style-type: none;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .card.cardNine {
@@ -249,6 +248,7 @@ ul {
   align-items: center;
   color: white;
   background: black;
+  padding: 0px 40px;
 }
 
 .card.cardNine p {
@@ -258,8 +258,8 @@ ul {
 .list-box {
   display: flex;
   flex-direction: row;
-  padding-left: 20px;
-  padding-top: 20px;
+  /* padding-left: 20px;
+  padding-top: 20px; */
 }
 
 .first,
@@ -269,6 +269,10 @@ ul {
   flex-direction: column;
   justify-content: center;
   width: 50%;
+}
+
+.first {
+  padding-left: 30px;
 }
 
 .first ul,
@@ -297,11 +301,11 @@ ul {
 }
 
 .card.cardEleven p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .cardEleven .header p {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -321,11 +325,6 @@ ul {
 .card.card.cardTwelve a {
   color: black;
 }
-
-/* .card.card.cardTwelve img {
-  max-height: 100%;
-  max-width: 100%;
-} */
 
 /* ---about page--- */
 .page {
@@ -434,6 +433,17 @@ hr {
   height: 24px;
 }
 
+.card.cardTwo a,
+.card.cardThree p,
+.card.cardFour p,
+.card.cardFive a,
+.card.cardSix p,
+.card.cardNine h5,
+.card.cardTen p,
+.card.cardTwelve a {
+  font-size: 16px;
+}
+
 @media (min-width: 550px) {
   .card.cardSix img {
     max-height: 100%;
@@ -462,14 +472,14 @@ hr {
   .text,
   .motto p,
   .card.cardEleven p {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 24px;
+    line-height: 34px;
     text-align: center;
   }
 
   .text h3,
   .card.cardEleven .header p {
-    font-size: 29px;
+    font-size: 26px;
   }
 
   .card.cardTwo div.text,
@@ -478,13 +488,12 @@ hr {
     padding: 40px 160px;
   }
 
-  .list-box {
-    padding-left: 80px;
-    /* border: 2px solid red; */
+  .first {
+    padding-left: 60px;
   }
 
   ul {
-    font-size: 23px;
+    font-size: 22px;
   }
 
   link.link-one a img {
@@ -500,7 +509,7 @@ hr {
   .card.cardNine h5,
   .card.cardTen p,
   .card.cardTwelve a {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -577,10 +586,10 @@ hr {
   }
 
   .parallax p {
-    padding-top: 25px;
+    padding-top: 13px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -633,6 +642,10 @@ hr {
 
   div .parallax.cardEight {
     grid-area: cardEight;
+  }
+
+  .second {
+    padding-left: 60px;
   }
 
   div .card.cardNine {
@@ -700,6 +713,7 @@ hr {
   .card.cardNine {
     color: white;
     background: black;
+    padding: 0px;
   }
 
   .card.cardTwelve {
@@ -744,7 +758,6 @@ hr {
   .cardEleven .header {
     display: flex;
     font-size: 26px;
-    /* margin: 70px 20px 60px 20px; */
     margin-bottom: 70px;
   }
 
@@ -755,6 +768,10 @@ hr {
   .list-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items :center;
+    /* padding-left: 40px; */
+    padding-top: 60px;
   }
 
   .projects {
