@@ -343,18 +343,15 @@ ul {
 }
 
 .image {
-  /* /* min-height: 180px; */
-  /* max-height: 300px; */
-  /* max-width: 100%; */
-  max-width: 330;
-  /* max-height: 305; */
+  /* max-width: 330;
+  max-height: 280.34px; */
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.imgOne {
-  /* background-image: url("./images/weWillMeetUpAgain.png"); */
+.imgOne,
+.imgTwo {
   object-fit: cover;
   width: 100%;
   height: auto;
@@ -362,8 +359,7 @@ ul {
 }
 
 .imgTwo {
-  background-image: url("./images/framePic.jpeg");
-  object-fit: cover;
+height: 280.34px;
 }
 
 .hr {
@@ -434,10 +430,10 @@ hr {
   margin: 40px 0px;
 }
 
-.single-project {
+/* .single-project { */
   /* border: 2px solid purple; */
-  margin-bottom: 40px;
-}
+  /* margin-bottom: 40px; */
+/* } */
 
 .link.link-one a img {
   width: 100px;
