@@ -144,17 +144,12 @@ div .link.link-two {
   text-align: center;
 }
 
-.text h3 {
-  font-size: 26px;
-}
-
 .card.cardTwo a {
   position: absolute;
   top: 25px;
-  /* left: 40px; */
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
 }
 
@@ -168,7 +163,6 @@ div .link.link-two {
 .cardFive,
 .card.cardSix,
 .cardNine,
-.card.cardTwelve,
 .card.cardTen {
   position: relative;
   display: flex;
@@ -189,7 +183,7 @@ div .link.link-two {
   top: 25px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
 }
 
@@ -207,8 +201,9 @@ div .link.link-two {
   padding-top: 10px;
   margin: 0px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
+
 .card.cardFour p,
 .card.cardFive a {
   /* top: 25px; */
@@ -216,10 +211,6 @@ div .link.link-two {
   text-decoration: none;
   font-weight: bold;
 }
-
-/* .card.cardFive {
-  padding-left: 40px;
-} */
 
 .card.cardSix {
   background-image: url("./images/gin.jpeg");
@@ -249,7 +240,7 @@ div .link.link-two {
 
 ul {
   list-style-type: none;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .card.cardNine {
@@ -381,6 +372,7 @@ ul {
 .about-text p,
 .single-project p {
   font-size: 22px;
+  line-height: 32px;
 }
 
 .wrap {
@@ -395,7 +387,8 @@ hr {
 .about-title p,
 .projects-header p {
   padding-right: 30px;
-  font-size: 32px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .image {
@@ -467,13 +460,15 @@ hr {
   }
 
   .text,
-  .motto p {
+  .motto p,
+  .card.cardEleven p {
     font-size: 25px;
     line-height: 35px;
     text-align: center;
   }
 
-  .text h3 {
+  .text h3,
+  .card.cardEleven .header p {
     font-size: 29px;
   }
 
@@ -486,6 +481,26 @@ hr {
   .list-box {
     padding-left: 80px;
     /* border: 2px solid red; */
+  }
+
+  ul {
+    font-size: 23px;
+  }
+
+  link.link-one a img {
+    width: 125px;
+    height: 50px;
+  }
+
+  .card.cardTwo a,
+  .card.cardThree p,
+  .card.cardFour p,
+  .card.cardFive a,
+  .card.cardSix p,
+  .card.cardNine h5,
+  .card.cardTen p,
+  .card.cardTwelve a {
+    font-size: 16px;
   }
 }
 
@@ -562,11 +577,11 @@ hr {
   }
 
   .parallax p {
-    position: absolute;
-    top: 8px;
-    left: 16px;
+    padding-top: 25px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
+    text-align: center;
   }
 
   .card {
@@ -824,8 +839,6 @@ hr {
   .single-project h3 {
     margin: 40px 0px;
   }
-
- 
 }
 
 @media (min-width: 1329px) {
