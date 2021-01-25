@@ -363,10 +363,22 @@ ul {
   background-repeat: no-repeat;
 }
 
+.imgTwo {
+  border: 2px solid purple;
+}
+
+.imgThree {
+  border: 2px solid #F26157;
+}
 .imgThree,
 .imgFour {
   /* height: 280.34px; */
   object-fit: cover;
+}
+
+.imgFour {
+  border: 2px solid #006666;
+object-fit:contain;
 }
 
 .hr {
@@ -966,5 +978,14 @@ hr {
 
   .icon-container p {
     font-size: 28px;
+  }
+
+  .single-project {
+    height: auto;
+    display: block;
+  }
+
+  .wrap {
+    display: block;
   }
 }
