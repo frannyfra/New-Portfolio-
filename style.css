@@ -183,7 +183,6 @@ div .link.link-two {
   top: 25px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
   color: white;
 }
 
@@ -344,7 +343,6 @@ ul {
 .single-project {
   display: flex;
   flex-direction: column;
-  
 }
 .image {
   height: 350px;
@@ -556,7 +554,7 @@ hr {
     text-decoration: none;
     color: black;
     line-height: 110px;
-    font-size: 26px;
+    font-size: 36px;
     margin: 0 40px 0 0;
   }
 
@@ -573,7 +571,7 @@ hr {
     float: left;
     border-right: 6px solid black;
     padding: 0 180px 0 120px;
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .link {
@@ -893,5 +891,36 @@ hr {
 
   .link {
     background-color: white;
+  }
+
+  .card.cardTwo a,
+  .card.cardThree p,
+  .card.cardFour p,
+  .card.cardFive a,
+  .card.cardSix p,
+  .parallax.cardEight p,
+  .card.cardNine h5,
+  .card.cardTen p,
+  .card.cardTwelve a {
+    font-size: 22px;
+  }
+
+  .text,
+  .motto p,
+  .card.cardEleven p {
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .card.cardEleven span {
+    font-size: 28px;
+  }
+  .card.cardEleven .header p {
+    font-size: 30px;
+  }
+
+  ul{
+    font-size: 26px;
   }
 }
