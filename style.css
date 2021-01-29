@@ -27,7 +27,7 @@ p {
   height: 90px;
   line-height: 90px;
   background: white;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .topnav a {
@@ -56,16 +56,30 @@ p {
   color: black;
 }
 
-.topnav.responsive {
+/* .topnav.responsive {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #d6cec2;
   align-items: center;
   border: 2px solid black;
   height: 100vh;
   max-height: 100%;
   position: relative;
+} */
+
+.topnav.responsive {
   background-color: #d6cec2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 .topnav.responsive a:not(:first-child) {
@@ -73,7 +87,7 @@ p {
   color: black;
   display: block;
   text-align: center;
-  font-size: 38px;
+  font-size: 25px;
 }
 
 .topnav.responsive a.icon {
@@ -81,7 +95,8 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  font-size: 38px;
+  font-size: 26px;
+  background-color: none;
 }
 
 /* --- cards ---- */
@@ -586,7 +601,7 @@ hr {
     border: 3px solid black;
     height: 110px;
     line-height: 110px;
-    background: white;
+    /* background: white; */
   }
 
   .topnav.responsive a:not(:first-child) {
