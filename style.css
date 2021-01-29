@@ -87,10 +87,10 @@ p {
   background-color: none;
 }
 
-.list-item-container #my-projects  {
-  background-color:#d6cec2;
+.list-item-container #my-projects {
+  background-color: #d6cec2;
 }
-.topnav.responsive a:first-child{
+.topnav.responsive a:first-child {
   background-color: red;
 }
 
@@ -596,7 +596,6 @@ hr {
     border: 3px solid black;
     height: 110px;
     line-height: 110px;
-    /* background: white; */
   }
 
   .topnav.responsive a:not(:first-child) {
@@ -861,6 +860,7 @@ hr {
     min-width: 57%;
     display: flex;
     flex-direction: column;
+    border: 4px solid red;
   }
 
   .about-title,
@@ -930,6 +930,14 @@ hr {
   .single-project h3 {
     margin: 40px 0px;
   }
+
+  .image {
+    height: 250px;
+  }
+
+  img {
+    height: 100%;
+  }
 }
 
 @media (min-width: 1329px) {
@@ -998,11 +1006,14 @@ hr {
   }
 
   .single-project {
-    height: auto;
-    display: block;
+    height: 100%;
+    /* display: block; */
   }
 
   .wrap {
-    display: block;
+    /* display: block; */
+    border: 2px solid orange;
+    height: 1000px;
+    /* align-items: center;  */
   }
 }
