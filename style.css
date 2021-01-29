@@ -26,7 +26,7 @@ p {
 .topnav {
   height: 90px;
   line-height: 90px;
-  background: white;
+  /* background: white; */
   /* overflow: hidden; */
 }
 
@@ -55,18 +55,6 @@ p {
   width: 28px;
   color: black;
 }
-
-/* .topnav.responsive {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #d6cec2;
-  align-items: center;
-  border: 2px solid black;
-  height: 100vh;
-  max-height: 100%;
-  position: relative;
-} */
 
 .topnav.responsive {
   background-color: #d6cec2;
@@ -97,6 +85,13 @@ p {
   top: 0;
   font-size: 26px;
   background-color: none;
+}
+
+.list-item-container #my-projects  {
+  background-color:#d6cec2;
+}
+.topnav.responsive a:first-child{
+  background-color: red;
 }
 
 /* --- cards ---- */
@@ -911,11 +906,6 @@ hr {
   .projects-header p {
     font-size: 26px;
   }
-
-  /* .image {
-    height: 500px;
-    margin-bottom: 30px;
-  } */
 
   .icon-container {
     height: 45px;
