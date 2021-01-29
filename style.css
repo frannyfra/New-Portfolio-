@@ -27,6 +27,7 @@ p {
   height: 90px;
   line-height: 90px;
   background: white;
+  overflow: hidden;
 }
 
 .topnav a {
@@ -341,7 +342,7 @@ ul {
 }
 
 .single-project,
-.first-single-project{
+.first-single-project {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
@@ -408,8 +409,8 @@ ul {
 }
 
 .about-text p,
-.single-project p, 
-.first-single-project{
+.single-project p,
+.first-single-project {
   font-size: 20px;
   line-height: 30px;
 }
@@ -563,7 +564,8 @@ hr {
     font-size: 20px;
   }
   .about-text p,
-  .single-project p {
+  .single-project p,
+  .first-single-project {
     font-size: 24px;
     line-height: 34px;
   }
