@@ -57,7 +57,7 @@ p {
 }
 
 .topnav.responsive {
-  background-color: #d6cec2;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,14 +68,16 @@ p {
   position: fixed;
   transition: 0.5s;
   z-index: 1;
+  opacity: 0.8;
 }
 
 .topnav.responsive a:not(:first-child) {
   text-decoration: none;
-  color: black;
+  color: white;
   display: block;
   text-align: center;
-  font-size: 25px;
+  font-size: 28px;
+  font-weight: bolder;
 }
 
 .topnav.responsive a.icon {
@@ -885,6 +887,7 @@ hr {
     margin-bottom: 50px;
     column-count: 2;
     column-gap: 70px;
+    height: 1000px;
   }
 
   .hr {
@@ -942,6 +945,10 @@ hr {
   .icon-container img {
     height: auto;
   }
+
+  /* .project-description {
+    border: 2px solid orange;
+  } */
 }
 
 @media (min-width: 1329px) {
@@ -996,10 +1003,12 @@ hr {
   .single-project p {
     font-size: 28px;
   }
+
   .about-title p,
   .projects-header p {
     font-size: 28px;
   }
+  
   .single-project h3 {
     font-size: 28px;
     font-weight: 600;
@@ -1009,15 +1018,20 @@ hr {
     font-size: 28px;
   }
 
-  .single-project {
-    height: 100%;
-    /* display: block; */
-  }
-
   .wrap {
     /* display: block; */
     border: 2px solid orange;
-    height: 1000px;
+    /* height: 5000px; */
     /* align-items: center;  */
   }
+  .single-project {
+    height: auto;
+    display: block;
+  }
+
+  .image {
+    height: 400px;
+  }
+
+
 }
