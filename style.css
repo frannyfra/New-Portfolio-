@@ -26,7 +26,7 @@ p {
 .topnav {
   height: 90px;
   line-height: 90px;
-  /* background: white; */
+  background: white;
   /* overflow: hidden; */
 }
 
@@ -146,9 +146,6 @@ div .link.link-two {
 .card.cardTwo div.text {
   position: relative;
   padding: 40px;
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
-  /* width: 15rem; */
 }
 
 .text {
@@ -178,7 +175,7 @@ div .link.link-two {
 .cardNine,
 .card.cardTwelve,
 .card.cardTen {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,9 +196,18 @@ div .link.link-two {
   color: white;
 }
 
-/* --card four-- */
-.card.cardFour {
+/* /* .card.cardFive {
   position: relative;
+} */
+
+.card.cardFive.founders-logo a img {
+  margin: auto;
+}
+
+.card.cardFive img {
+  height: 200px;
+  width: 200px;
+  text-align: center;
 }
 
 /* add font for sskill */
@@ -217,8 +223,8 @@ div .link.link-two {
   font-size: 16px;
 }
 
-.card.cardFour p,
-.card.cardFive a {
+.card.cardFour a,
+.card.cardFive p {
   /* top: 25px; */
   color: black;
   text-decoration: none;
@@ -589,6 +595,13 @@ hr {
   .icon-container p {
     font-size: 24px;
   }
+
+  .card.cardFive img {
+    height: auto;
+    width: auto;
+    /* border: 2px solid red; */
+    margin: auto;
+  }
 }
 
 @media (min-width: 1250px) {
@@ -641,6 +654,10 @@ hr {
   .card {
     /* height: 25rem; */
     border: 2px solid black;
+  }
+
+  .card.cardOne {
+    display: block;
   }
 
   .cards .parallax {
@@ -701,11 +718,11 @@ hr {
 
   div .card.cardFour {
     grid-area: cardFour;
+    background-color: #d6cec2;
   }
 
   div .card.cardFive {
     grid-area: cardFive;
-    background-color: #d6cec2;
   }
 
   div .card.cardSix {
@@ -945,10 +962,6 @@ hr {
   .icon-container img {
     height: auto;
   }
-
-  /* .project-description {
-    border: 2px solid orange;
-  } */
 }
 
 @media (min-width: 1329px) {
@@ -1008,7 +1021,7 @@ hr {
   .projects-header p {
     font-size: 28px;
   }
-  
+
   .single-project h3 {
     font-size: 28px;
     font-weight: 600;
@@ -1032,6 +1045,4 @@ hr {
   .image {
     height: 400px;
   }
-
-
 }
