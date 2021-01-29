@@ -938,6 +938,10 @@ hr {
   img {
     height: 100%;
   }
+
+  .icon-container img {
+    height: auto;
+  }
 }
 
 @media (min-width: 1329px) {
