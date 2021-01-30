@@ -196,9 +196,9 @@ div .link.link-two {
   color: white;
 }
 
-/* /* .card.cardFive {
-  position: relative;
-} */
+.card.cardFive a {
+  color: black;
+}
 
 .card.cardFive.founders-logo a img {
   margin: auto;
@@ -983,7 +983,7 @@ hr {
 
   .card.cardTwo a,
   .card.cardThree p,
-  .card.cardFour p,
+  .card.cardFour a,
   .card.cardFive a,
   .card.cardSix p,
   .parallax.cardEight p,
