@@ -3,9 +3,10 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+  /* width: 100%;
+  height: 100%; */
+  padding: 0px;
+  margin: 0px;
   user-select: none;
 }
 
@@ -27,7 +28,6 @@ p {
   height: 90px;
   line-height: 90px;
   background: white;
-  /* overflow: hidden; */
 }
 
 .topnav a {
@@ -57,6 +57,7 @@ p {
 }
 
 .topnav.responsive {
+  position: fixed;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -66,9 +67,8 @@ p {
   height: 100%;
   width: 100%;
   position: fixed;
-  transition: 0.5s;
+  transition: 0.9s;
   z-index: 1;
-  opacity: 0.8;
 }
 
 .topnav.responsive a:not(:first-child) {
@@ -605,9 +605,13 @@ hr {
 }
 
 @media (min-width: 1250px) {
-  .topnav,
-  .topnav.responsive {
-    display: block;
+  .topnav {
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
     border: 3px solid black;
     height: 110px;
     line-height: 110px;
@@ -966,6 +970,7 @@ hr {
 
 @media (min-width: 1329px) {
   .cards {
+    margin-top: 110px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 2.5fr 2.5fr 2.5fr 2.5fr 0.2fr;
