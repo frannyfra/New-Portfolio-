@@ -276,13 +276,10 @@ ul {
 .list-box {
   display: flex;
   flex-direction: row;
-  /* padding-left: 20px;
-  padding-top: 20px; */
 }
 
 .first,
 .second {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -452,20 +449,9 @@ hr {
 .wrap h3 {
   font-size: 20px;
   font-weight: 600;
-  /* margin: 40px 0px; */
 }
 
-/* .single-project h3 {
-  margin: 40px 0px;
-} */
-
-/* .image {
-  height: 500px;
-  margin-bottom: 30px;
-} */
-
 .icon-container {
-  /* border: 2px solid black; */
   height: 45px;
   margin-bottom: 80px;
   margin-top: 30px;
@@ -483,11 +469,6 @@ hr {
   color: grey;
   font-size: 20px;
 }
-
-/* .single-project { */
-/* border: 2px solid purple; */
-/* margin-bottom: 40px; */
-/* } */
 
 .link.link-one a img {
   width: 100px;
@@ -507,6 +488,18 @@ hr {
 .card.cardTen p,
 .card.cardTwelve a {
   font-size: 16px;
+}
+
+.topnav a:hover {
+  color: #d6cec2;
+}
+
+a.icon ::before {
+  color: black;
+}
+
+.topnav.responsive a.icon ::before {
+  color: white;
 }
 
 @media (min-width: 550px) {
