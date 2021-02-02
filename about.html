@@ -203,24 +203,6 @@
         <p>delau.francesca@gmail.com | London</p>
       </div>
     </div>
-    <script>
-      const toggle = () => {
-        let element = document.getElementById("myTopnav");
-        element.className === "topnav"
-          ? (element.className += " responsive")
-          : (element.className = "topnav");
-      };
-
-      var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("myTopnav").style.top = "0";
-  } else {
-    document.getElementById("myTopnav").style.top = "-110px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-    </script>
+    <script src="myscript.js"></script>
   </body>
 </html>
