@@ -23,7 +23,7 @@ p {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  font-family : "Questrial";
+  font-family: "Questrial";
   height: 90px;
   line-height: 90px;
   background: white;
@@ -380,7 +380,7 @@ ul {
 .imgSix {
   object-fit: cover;
   width: 100%;
-border: 2px solid #8585ad;
+  border: 2px solid #8585ad;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -439,6 +439,10 @@ border: 2px solid #8585ad;
   font-weight: bolder;
 }
 
+.single-project h3 a:hover {
+  color: #8585ad;
+}
+
 .single-project p a {
   color: black;
   font-weight: bolder;
@@ -471,7 +475,6 @@ hr {
 .icon-container {
   height: 45px;
   margin-bottom: 80px;
-  margin-top: 30px;
 }
 
 .icon-container {
@@ -950,7 +953,6 @@ a.icon ::before {
   .icon-container {
     height: 45px;
     margin-bottom: 80px;
-    margin-top: 30px;
   }
 
   .icon-container {
