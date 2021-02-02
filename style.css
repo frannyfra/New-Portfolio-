@@ -490,8 +490,12 @@ hr {
   font-size: 16px;
 }
 
-.topnav a:hover {
+.topnav a:hover{
   color: #d6cec2;
+}
+
+.topnav a.active:hover {
+  color: black;
 }
 
 a.icon ::before {
