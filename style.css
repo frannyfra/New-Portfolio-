@@ -370,6 +370,7 @@ ul {
   max-height: 350px;
   max-width: 500px;
   align-self: center;
+  padding: 30px;
 }
 
 .imgOne,
@@ -467,18 +468,10 @@ hr {
   font-weight: bold;
 }
 
-.wrap h3 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
 .icon-container {
-  height: 45px;
+  height: auto;
   margin-bottom: 80px;
-}
-
-.icon-container {
-  height: 90px;
+  margin-top: 40px;
 }
 
 .icon-container img {
@@ -543,7 +536,7 @@ a.icon ::before {
 
   .about-title p,
   .projects-header p {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .hr {
@@ -598,15 +591,21 @@ a.icon ::before {
   .card.cardTwelve a {
     font-size: 20px;
   }
+
   .about-text p,
   .single-project p,
   .first-single-project {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .wrap h3 {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .wrap h3 a {
+    font-size: 22px;
+    font-weight: bold;
   }
 
   .icon-container p {
@@ -976,6 +975,7 @@ a.icon ::before {
 
   .image {
     height: 250px;
+    padding: 0px;
   }
 
   img {
