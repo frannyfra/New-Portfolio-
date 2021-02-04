@@ -202,11 +202,11 @@ div .link.link-two {
 .card.cardFive.founders-logo a img {
   margin: auto;
 }
-
+  
 .card.cardFive img {
   height: 200px;
   width: 200px;
-  text-align: center;
+  margin: 40px auto;
 }
 
 /* add font for sskill */
