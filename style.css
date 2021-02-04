@@ -148,8 +148,8 @@ div .link.link-two {
 }
 
 .text {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 26px;
   text-align: center;
 }
 
@@ -202,7 +202,7 @@ div .link.link-two {
 .card.cardFive.founders-logo a img {
   margin: auto;
 }
-  
+
 .card.cardFive img {
   height: 200px;
   width: 200px;
@@ -214,12 +214,16 @@ div .link.link-two {
   padding: 0px 50px;
 }
 
-.card.cardNine h5 {
+/* .card.cardNine h5 {
   padding-top: 17px;
   padding-bottom: 20px;
   margin: 0px;
   font-weight: bold;
   font-size: 16px;
+} */
+
+.cardNine h5 {
+  margin: 0px;
 }
 
 .card.cardFour a,
@@ -471,7 +475,6 @@ hr {
 .icon-container {
   height: auto;
   margin-bottom: 80px;
-  margin-top: 40px;
 }
 
 .icon-container img {
@@ -546,7 +549,7 @@ a.icon ::before {
   .about-text,
   .projects,
   .icon-container {
-    width: 60%;
+    width: 57%;
   }
 
   .text,
@@ -557,7 +560,7 @@ a.icon ::before {
     text-align: center;
   }
 
-  .text h3{
+  .text h3 {
     font-size: 28px;
   }
 
@@ -679,7 +682,6 @@ a.icon ::before {
   }
 
   .card {
-    /* height: 25rem; */
     border: 2px solid black;
   }
 
@@ -710,7 +712,7 @@ a.icon ::before {
     padding-top: 13px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -834,7 +836,7 @@ a.icon ::before {
   .card.cardNine {
     color: white;
     background: black;
-    padding: 0px;
+    padding: 1rem;
   }
 
   .card.cardTwelve {
@@ -883,7 +885,7 @@ a.icon ::before {
   }
 
   .card.cardEleven p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .list-box {
@@ -927,7 +929,7 @@ a.icon ::before {
 
   .about-text p,
   .single-project p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .text h3 {
@@ -961,24 +963,13 @@ a.icon ::before {
     font-size: 28px;
   }
 
-  .icon-container {
-    height: 45px;
-    margin-bottom: 80px;
-    margin-top: 40px;
-  }
-
-  .icon-container {
-    height: auto;
-    width: 57%;
-  }
-
   .icon-container img {
     margin: 20px 20px 20px 0px;
   }
 
   .icon-container p {
     color: grey;
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .single-project h3 {
@@ -995,8 +986,8 @@ a.icon ::before {
   }
 
   .icon-container img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
 
   .first-single-project {
@@ -1006,11 +997,14 @@ a.icon ::before {
   .card.cardFive img {
     margin: auto;
   }
+
+  .cards {
+    margin-top: 110px;
+  }
 }
 
 @media (min-width: 1329px) {
   .cards {
-    margin-top: 110px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 2.5fr 2.5fr 2.5fr 2.5fr 0.2fr;
@@ -1088,5 +1082,10 @@ a.icon ::before {
 
   .image {
     height: 400px;
+  }
+
+  .icon-container img {
+    width: 40px;
+    height: 40px;
   }
 }
