@@ -148,8 +148,8 @@ div .link.link-two {
 }
 
 .text {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 28px;
   text-align: center;
 }
 
@@ -243,8 +243,8 @@ div .link.link-two {
   padding: 40px;
   margin: 0 auto;
   text-align: center;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .cardTen {
@@ -927,7 +927,7 @@ a.icon ::before {
     margin-bottom: 50px;
     column-count: 2;
     column-gap: 70px;
-    height: 1000px;
+    /* height: 1000px; */
   }
 
   .hr {
@@ -942,7 +942,7 @@ a.icon ::before {
   .about-title p,
   .projects-header p {
     padding-left: 20px;
-    font-size: 32px;
+    /* font-size: 32px; */
   }
 
   .page.about-title p,
@@ -953,10 +953,11 @@ a.icon ::before {
   .icon-container {
     height: 45px;
     margin-bottom: 80px;
+    margin-top : 40px;
   }
 
   .icon-container {
-    height: 90px;
+    height: auto;
     width: 57%;
   }
 
@@ -966,7 +967,7 @@ a.icon ::before {
 
   .icon-container p {
     color: grey;
-    font-size: 20px;
+    font-size: 26px;
   }
 
   .single-project h3 {
@@ -982,7 +983,8 @@ a.icon ::before {
   }
 
   .icon-container img {
-    height: auto;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -1013,45 +1015,50 @@ a.icon ::before {
   .card.cardNine h5,
   .card.cardTen p,
   .card.cardTwelve a {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .text,
   .motto p,
   .card.cardEleven p {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 22px;
+    line-height: 32px;
     text-align: center;
   }
 
   .card.cardEleven span {
-    font-size: 28px;
+    font-size: 24px;
   }
   .card.cardEleven .header p {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   ul {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .about-text p,
   .single-project p {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .about-title p,
   .projects-header p {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .single-project h3 {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 22px;
+    /* font-weight: 600; */
+  }
+
+  .single-project h3 a {
+    font-size: 24px;
+    font-weight: bolder;
   }
 
   .icon-container p {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .single-project {
