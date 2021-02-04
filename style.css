@@ -927,7 +927,7 @@ a.icon ::before {
     margin-bottom: 50px;
     column-count: 2;
     column-gap: 70px;
-    /* height: 1000px; */
+    height: 900px;
   }
 
   .hr {
@@ -953,7 +953,7 @@ a.icon ::before {
   .icon-container {
     height: 45px;
     margin-bottom: 80px;
-    margin-top : 40px;
+    margin-top: 40px;
   }
 
   .icon-container {
@@ -985,6 +985,10 @@ a.icon ::before {
   .icon-container img {
     width: 40px;
     height: 40px;
+  }
+
+  .first-single-project {
+    display: block;
   }
 }
 
