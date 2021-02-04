@@ -552,14 +552,22 @@ a.icon ::before {
   .text,
   .motto p,
   .card.cardEleven p {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 30px;
     text-align: center;
   }
 
-  .text h3,
+  .text h3{
+    font-size: 28px;
+  }
+
   .card.cardEleven .header p {
-    font-size: 26px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .card.cardEleven span {
+    font-size: 20px;
   }
 
   .card.cardTwo div.text,
@@ -573,7 +581,7 @@ a.icon ::before {
   }
 
   ul {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   link.link-one a img {
@@ -583,13 +591,13 @@ a.icon ::before {
 
   .card.cardTwo a,
   .card.cardThree p,
-  .card.cardFour p,
+  .card.cardFour a,
   .card.cardFive a,
   .card.cardSix p,
   .card.cardNine h5,
   .card.cardTen p,
   .card.cardTwelve a {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .about-text p,
@@ -615,7 +623,7 @@ a.icon ::before {
   .card.cardFive img {
     height: auto;
     width: auto;
-    margin: auto;
+    margin: 50px auto;
   }
 }
 
@@ -922,6 +930,10 @@ a.icon ::before {
     font-size: 22px;
   }
 
+  .text h3 {
+    font-size: 30px;
+  }
+
   .wrap {
     margin-bottom: 50px;
     column-count: 2;
@@ -989,6 +1001,10 @@ a.icon ::before {
 
   .first-single-project {
     display: block;
+  }
+
+  .card.cardFive img {
+    margin: auto;
   }
 }
 
