@@ -21,3 +21,4 @@ const navbar = document.getElementById("myTopnav");
     else null;
   prevScrollpos = currentScrollPos;
 }
+

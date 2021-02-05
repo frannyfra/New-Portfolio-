@@ -75,7 +75,7 @@ p {
   color: white;
   display: block;
   text-align: center;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bolder;
 }
 
@@ -91,9 +91,10 @@ p {
 .list-item-container #my-projects {
   background-color: #d6cec2;
 }
-.topnav.responsive a:first-child {
+
+/* .topnav.responsive a:first-child {
   background-color: red;
-}
+} */
 
 /* --- cards ---- */
 .card {
@@ -148,8 +149,8 @@ div .link.link-two {
 }
 
 .text {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 28px;
   text-align: center;
 }
 
@@ -214,14 +215,6 @@ div .link.link-two {
   padding: 0px 50px;
 }
 
-/* .card.cardNine h5 {
-  padding-top: 17px;
-  padding-bottom: 20px;
-  margin: 0px;
-  font-weight: bold;
-  font-size: 16px;
-} */
-
 .cardNine h5 {
   margin: 0px;
 }
@@ -269,7 +262,6 @@ ul {
   align-items: center;
   color: white;
   background: black;
-  padding: 0px 40px;
 }
 
 .card.cardNine p {
@@ -319,7 +311,7 @@ ul {
 }
 
 .card.cardEleven p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .cardEleven .header p {
@@ -328,7 +320,7 @@ ul {
 }
 
 .card.cardEleven span {
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 2.5rem;
 }
 
@@ -374,7 +366,7 @@ ul {
   max-height: 350px;
   max-width: 500px;
   align-self: center;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .imgOne,
@@ -434,14 +426,19 @@ ul {
 .about-text p,
 .single-project p,
 .first-single-project {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .single-project h3 a {
-  text-decoration: none;
   color: black;
   font-weight: bolder;
+  font-size: 20px;
+}
+
+.single-project h3,
+.first-single-project h3 {
+  font-size: 18px;
 }
 
 .single-project h3 a:hover {
@@ -468,7 +465,7 @@ hr {
 .about-title p,
 .projects-header p {
   padding-right: 30px;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -497,13 +494,13 @@ hr {
 
 .card.cardTwo a,
 .card.cardThree p,
-.card.cardFour p,
+.card.cardFour a,
 .card.cardFive a,
 .card.cardSix p,
 .card.cardNine h5,
 .card.cardTen p,
 .card.cardTwelve a {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .topnav a:hover {
@@ -520,6 +517,11 @@ a.icon ::before {
 
 .topnav.responsive a.icon ::before {
   color: white;
+}
+
+.text h3 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 @media (min-width: 550px) {
@@ -628,6 +630,18 @@ a.icon ::before {
     width: auto;
     margin: 50px auto;
   }
+
+  .image {
+    padding: 30px;
+  }
+
+  .single-project h3 a {
+    text-decoration: none;
+  }
+
+  .topnav.responsive a:not(:first-child) {
+    font-size: 34px;
+  }
 }
 
 @media (min-width: 1250px) {
@@ -643,15 +657,36 @@ a.icon ::before {
     line-height: 110px;
   }
 
+  /* responsive topnav */
+  .topnav.responsive {
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    border: 3px solid black;
+    height: 110px;
+    line-height: 110px;
+    background-color: white;
+  }
+
+  .list-item-container {
+    width: 100%;
+  }
+
   .topnav.responsive a:not(:first-child) {
-    font-size: 26px;
+    /* display: block; */
+    color: black;
+    font-weight: normal;
   }
 
   .topnav a:not(:first-child) {
     float: right;
   }
 
-  .topnav a {
+  .topnav a,
+  .topnav.responsive a {
     display: inline;
     text-decoration: none;
     color: black;
@@ -666,7 +701,8 @@ a.icon ::before {
     display: none;
   }
 
-  .topnav a:first-child {
+  .topnav a:first-child,
+  .topnav.responsive a:first-child {
     height: 110px;
     margin: 0;
     background-color: #d6cec2;
@@ -932,10 +968,6 @@ a.icon ::before {
     font-size: 20px;
   }
 
-  .text h3 {
-    font-size: 30px;
-  }
-
   .wrap {
     margin-bottom: 50px;
     column-count: 2;
@@ -1087,5 +1119,9 @@ a.icon ::before {
   .icon-container img {
     width: 40px;
     height: 40px;
+  }
+
+  .text h3 {
+    font-size: 30px;
   }
 }
