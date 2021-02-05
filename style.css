@@ -503,7 +503,7 @@ hr {
   font-size: 14px;
 }
 
-.topnav a:hover {
+.topnav a:hover:not(:first-child) {
   color: #d6cec2;
 }
 
