@@ -183,6 +183,11 @@ div .link.link-two {
   background-repeat: no-repeat;
 }
 
+.video-container {
+margin: auto;
+border: 2px solid black;
+}
+
 .card.cardThree p,
 .card.cardFour p,
 .card.cardFive a,
@@ -222,7 +227,7 @@ div .link.link-two {
 .card.cardFour a,
 .card.cardFive p {
   /* top: 25px; */
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -524,6 +529,10 @@ a.icon ::before {
   font-weight: bold;
 }
 
+.cardFour {
+  background-color: black;
+}
+
 @media (min-width: 550px) {
   .card.cardSix img {
     max-height: 100%;
@@ -783,7 +792,8 @@ a.icon ::before {
 
   div .card.cardFour {
     grid-area: cardFour;
-    background-color: #d6cec2;
+    /* background-color: #d6cec2; */
+    background-color: black;
   }
 
   div .card.cardFive {
@@ -860,11 +870,7 @@ a.icon ::before {
   .card.cardFour {
     position: relative;
   }
-
-  .card.cardFour p {
-    color: black;
-  }
-
+  
   .card.cardSix {
     grid-area: cardSix;
   }
