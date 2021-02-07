@@ -15,7 +15,6 @@ html {
 /* Slides */
 .mySlides {
   display: none;
-  padding: 80px;
   text-align: center;
 }
 
@@ -53,15 +52,10 @@ html {
   color: white;
 }
 
-/* Add an italic font style to all quotes */
-.mySlides h3 {
-  font-style: italic;
+.mySlides li {
+  font-size: 18px;
+  padding: 20px;
   color: white;
-}
-
-/* Add a blue color to the author */
-.author {
-  color: cornflowerblue;
 }
 
 p {
@@ -238,7 +232,7 @@ div .link.link-two {
 .slideshow-container {
   margin: auto;
   height: 400px;
-  width: 400px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -280,7 +274,11 @@ div .link.link-two {
   margin: 0px;
 }
 
-.card.cardFour a,
+.mySlides p {
+  font-size: 20px;
+}
+
+.card.cardFour p,
 .card.cardFive p {
   /* top: 25px; */
   color: white;
@@ -555,13 +553,17 @@ hr {
 
 .card.cardTwo a,
 .card.cardThree p,
-.card.cardFour a,
+.card.cardFour p,
 .card.cardFive a,
 .card.cardSix p,
 .card.cardNine h5,
 .card.cardTen p,
 .card.cardTwelve a {
   font-size: 14px;
+}
+
+.author {
+  font-size: 18px;
 }
 
 .topnav a:hover:not(:first-child) {
@@ -661,7 +663,7 @@ a.icon ::before {
 
   .card.cardTwo a,
   .card.cardThree p,
-  .card.cardFour a,
+  .card.cardFour p,
   .card.cardFive a,
   .card.cardSix p,
   .card.cardNine h5,
@@ -706,6 +708,10 @@ a.icon ::before {
 
   .topnav.responsive a:not(:first-child) {
     font-size: 34px;
+  }
+
+  .mySlides li {
+    font-size: 20px;
   }
 }
 
@@ -1132,7 +1138,6 @@ a.icon ::before {
     font-size: 22px;
     line-height: 32px;
     text-align: center;
-    font-weight: ;
   }
 
   .card.cardEleven span {
@@ -1186,5 +1191,9 @@ a.icon ::before {
 
   .text h3 {
     font-size: 30px;
+  }
+
+  .mySlides li {
+    font-size: 22px;
   }
 }
