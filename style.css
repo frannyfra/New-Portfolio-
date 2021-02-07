@@ -12,6 +12,58 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 40px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* Add an italic font style to all quotes */
+.mySlides h3 {
+  font-style: italic;
+  color: white;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
 p {
   margin: 0;
 }
@@ -175,7 +227,7 @@ div .link.link-two {
 .cardNine,
 .card.cardTwelve,
 .card.cardTen {
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,9 +235,13 @@ div .link.link-two {
   background-repeat: no-repeat;
 }
 
-.video-container {
-margin: auto;
-border: 2px solid black;
+.slideshow-container {
+  margin: auto;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card.cardThree p,
@@ -870,7 +926,7 @@ a.icon ::before {
   .card.cardFour {
     position: relative;
   }
-  
+
   .card.cardSix {
     grid-area: cardSix;
   }
@@ -1076,6 +1132,7 @@ a.icon ::before {
     font-size: 22px;
     line-height: 32px;
     text-align: center;
+    font-weight: ;
   }
 
   .card.cardEleven span {
